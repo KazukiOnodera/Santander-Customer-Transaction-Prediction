@@ -22,6 +22,7 @@ if __name__ == "__main__":
     te = pd.read_csv('../input/test.csv.zip')
     
     tr.to_pickle('../data/train.pkl')
+    tr[['target']].to_pickle('../data/target.pkl')
     te.to_pickle('../data/test.pkl')
     
     utils.end(__file__)
