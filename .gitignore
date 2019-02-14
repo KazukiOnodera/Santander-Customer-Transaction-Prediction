@@ -1,0 +1,12 @@
+*.DS_Store
+~.xls*
+feature/
+input/
+output/
+data/
+external/
+jn/.ipynb_checkpoints
+py/*.model
+py/*.p
+py/__pycache__/*
+py/~.xls*
