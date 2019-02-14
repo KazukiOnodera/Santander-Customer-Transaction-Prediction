@@ -204,25 +204,25 @@ def savefig_imp(imp, path, x='gain', y='feature', n=30, title='Importance'):
 
 def load_train(col=None):
     if col is None:
-        return pd.read_feather('../data/train.f')
+        return pd.read_pickle('../data/train.pkl')
     else:
-        return pd.read_feather('../data/train.f')[col]
+        return pd.read_pickle('../data/train.pkl')[col]
 
 def load_test(col=None):
     if col is None:
-        return pd.read_feather('../data/test.f')
+        return pd.read_pickle('../data/test.pkl')
     else:
-        return pd.read_feather('../data/test.f')[col]
+        return pd.read_pickle('../data/test.pkl')[col]
 
 def load_target():
-    return pd.read_feather('../data/target.f')
+    return pd.read_pickle('../data/target.pkl')
 
 def load_sub():
-    return pd.read_feather('../data/sub.f')
+    return pd.read_pickle('../data/sub.pkl')
 
 def load_sample():
-    tr = pd.read_feather('../data/tr.f')
-    te = pd.read_feather('../data/te.f')
+    tr = pd.read_pickle('../data/tr.pkl')
+    te = pd.read_pickle('../data/te.pkl')
     return tr, te
 
 def savefig_sub(sub, path):
