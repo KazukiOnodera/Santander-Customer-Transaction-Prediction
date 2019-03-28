@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 28 23:48:27 2019
+Created on Fri Mar 29 01:06:50 2019
 
 @author: Kazuki
 """
@@ -17,17 +17,18 @@ sys.path.append(f'/home/{os.environ.get("USER")}/PythonLibrary')
 import lgbextension as ex
 import lightgbm as lgb
 from multiprocessing import cpu_count
-from sklearn.externals import joblib
-
-from sklearn.metrics import roc_auc_score
+from sklearn.model_selection import GroupKFold
 
 import utils
-#utils.start(__file__)
-#==============================================================================
 
-SEED = np.random.randint(9999)
-print('SEED:', SEED)
+utils.start(__file__)
+# =============================================================================
 
+SUBMIT_FILE_PATH = '../output/0328-1.csv.gz'
+
+COMMENT = 'lgb shuffle row'
+
+EXE_SUBMIT = True
 
 NFOLD = 5
 
@@ -37,7 +38,7 @@ param = {
          'objective': 'binary',
          'metric': 'None',
          
-         'learning_rate': 0.1,
+         'learning_rate': 0.01,
          'max_depth': -1,
          'num_leaves': 2**6 -1,
          'max_bin': 255,
@@ -59,58 +60,39 @@ param = {
 NROUND = 9999
 ESR = 100
 VERBOSE_EVAL = 50
+SEED = 1
 
-USE_PREF = [
-        'f001',
-        'f003',
-        ]
-
-DROP = [
-        
-        ]
 
 # =============================================================================
 # load
 # =============================================================================
+X_train = pd.read_csv('../input/train.csv.zip')
 
+y_train = X_train['target']
+X_train = X_train.iloc[:,2:]
 
-files_tr = sorted(glob('../data/train_f*.pkl'))
+X_train_0 = X_train[y_train==0]
+X_train_1 = X_train[y_train==1]
 
-# USE_PREF
-li = []
-for i in files_tr:
-    for j in USE_PREF:
-        if j in i:
-            li.append(i)
-            break
-files_tr = li
+def shuffle(df):
+    df_ = pd.DataFrame(index=df.index)
+    for c in tqdm(df.columns):
+        df_[c] = df[c].sample(frac=1).reset_index(drop=True)
+    return df_
 
-[print(i,f) for i,f in enumerate(files_tr)]
+X_train_0_ = shuffle(X_train_0)
+X_train_1_ = shuffle(X_train_1)
 
-X_train = pd.concat([
-                pd.read_pickle(f) for f in tqdm(files_tr, mininterval=30)
-               ], axis=1)
+X_train_ = pd.concat([X_train_0, X_train_1, X_train_0_, X_train_1_]).sort_index()
+y_train_ = pd.concat([y_train, y_train]).sort_index()
 
-y_train = utils.load_target()['target']
-
-
-# drop
-X_train.drop(DROP, axis=1, inplace=True)
-
-
-if X_train.columns.duplicated().sum()>0:
-    raise Exception(f'duplicated!: { X_train.columns[X_train.columns.duplicated()] }')
-print('no dup :) ')
-print(f'X_train.shape {X_train.shape}')
-
-gc.collect()
-
+group_kfold = GroupKFold(n_splits=NFOLD)
+group = X_train_.index % NFOLD
 
 # =============================================================================
-# cv
+# model
 # =============================================================================
-
-dtrain = lgb.Dataset(X_train, y_train.values, 
+dtrain = lgb.Dataset(X_train_, y_train_.values, 
                      free_raw_data=False)
 gc.collect()
 
@@ -124,14 +106,16 @@ for i in range(LOOP):
     param['seed'] = np.random.randint(9999)
     
     ret, models = lgb.cv(param, dtrain, NROUND,
-                         nfold=NFOLD,
+#                          nfold=NFOLD,
+                         folds=group_kfold.split(X_train_, y_train_, group),
                          stratified=True, shuffle=True,
                          feval=ex.eval_auc,
                          early_stopping_rounds=ESR, 
                          verbose_eval=VERBOSE_EVAL,
                          seed=SEED+i)
     
-    y_pred = ex.eval_oob(X_train, y_train.values, models, SEED+i, 
+    y_pred = ex.eval_oob(X_train_, y_train_.values, models, SEED+i, 
+                         folds=group_kfold.split(X_train_, y_train_, group),
                          stratified=True, shuffle=True)
     y_preds.append(y_pred)
     
@@ -141,33 +125,38 @@ for i in range(LOOP):
 
 nround_mean = int((nround_mean/LOOP) * 1.3)
 
+# =============================================================================
+# test
+# =============================================================================
 
-imp = ex.getImp(model_all)
-imp['split'] /= imp['split'].max()
-imp['gain'] /= imp['gain'].max()
-imp['total'] = imp['split'] + imp['gain']
-imp.sort_values('total', ascending=False, inplace=True)
-imp.reset_index(drop=True, inplace=True)
+test = pd.read_csv('../input/test.csv.zip')
 
+sub = pd.read_csv('../input/sample_submission.csv.zip')
 
-for i,y_pred in enumerate(y_preds):
-    if i==0:
-        oof = y_pred
-    else:
-        oof += y_pred
-oof /= len(y_preds)
+for model in tqdm(models):
+    sub['target'] += pd.Series(model.predict(test.iloc[:,1:])).rank()
+sub['target'] /= sub['target'].max()
 
 
 
-imp.to_csv(f'LOG/imp_{__file__}.csv', index=False)
-pd.DataFrame(oof, columns=['oof']).to_csv(f'../data/oof_{__file__}.csv', index=False)
 
-utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
 
+
+
+# save
+sub.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
+
+# =============================================================================
+# submission
+# =============================================================================
+if EXE_SUBMIT:
+    print('submit')
+    utils.submit(SUBMIT_FILE_PATH, COMMENT)
 
 
 
 #==============================================================================
 utils.end(__file__)
 #utils.stop_instance()
+
 
