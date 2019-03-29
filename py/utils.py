@@ -35,9 +35,7 @@ IMP_FILE = 'LOG/xxx.csv'
 
 IMP_FILE_BEST = 'LOG/xxx.csv'
 
-#SUB_BEST = '../output/0203-1.csv.gz'
-#SUB_CORR = ['../output/0129-2.csv.gz', '../output/0129-5.csv.gz',
-#            '../output/0130-3.csv.gz']
+SUB_BEST = '../output/0328-1.csv.gz'
 
 # =============================================================================
 # def
