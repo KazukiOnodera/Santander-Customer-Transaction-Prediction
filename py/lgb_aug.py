@@ -37,7 +37,7 @@ param = {
          'objective': 'binary',
          'metric': 'None',
          
-         'learning_rate': 0.01,
+         'learning_rate': 0.1,
          'max_depth': -1,
          'num_leaves': 2**6 -1,
          'max_bin': 255,
@@ -76,13 +76,15 @@ X_train_1 = X_train[y_train==1]
 def shuffle(df):
     df_ = pd.DataFrame(index=df.index)
     for c in tqdm(df.columns):
-        df_[c] = df[c].sample(frac=1).reset_index(drop=True)
+        df_[c] = df[c].sample(frac=1).values #+ (0.1*np.random.uniform( -1,1, len(df) ))
     return df_
 
 
 X_train_ = pd.concat([shuffle(X_train_0), shuffle(X_train_0), shuffle(X_train_0),
-                      shuffle(X_train_1), shuffle(X_train_1), shuffle(X_train_1)]).sort_index()
-y_train_ = pd.concat([y_train, y_train, y_train]).sort_index()
+                      shuffle(X_train_1), shuffle(X_train_1), shuffle(X_train_1),
+                      ]).sort_index()
+y_train_ = pd.concat([y_train, y_train, y_train
+                      ]).sort_index()
 
 
 # =============================================================================
