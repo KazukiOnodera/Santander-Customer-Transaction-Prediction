@@ -21,7 +21,7 @@ from collections import OrderedDict
 from sklearn.metrics import roc_auc_score
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
 
 SUBMIT_FILE_PATH = '../output/0329-1.csv.gz'
