@@ -37,7 +37,7 @@ param = {
          'objective': 'binary',
          'metric': 'None',
          
-         'learning_rate': 0.1,
+         'learning_rate': 0.01,
          'max_depth': -1,
          'num_leaves': 2**6 -1,
          'max_bin': 255,
