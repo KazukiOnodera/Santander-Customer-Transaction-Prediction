@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 28 23:48:27 2019
+Created on Sun Mar 31 01:02:08 2019
 
 @author: Kazuki
 """
@@ -17,13 +17,19 @@ sys.path.append(f'/home/{os.environ.get("USER")}/PythonLibrary')
 import lgbextension as ex
 import lightgbm as lgb
 from multiprocessing import cpu_count
-from sklearn.externals import joblib
-
+from collections import OrderedDict
 from sklearn.metrics import roc_auc_score
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
+
+SUBMIT_FILE_PATH = '../output/0330-1.csv.gz'
+
+COMMENT = 'f001 f003'
+
+EXE_SUBMIT = True
+
 
 SEED = np.random.randint(9999)
 print('SEED:', SEED)
@@ -31,7 +37,7 @@ print('SEED:', SEED)
 
 NFOLD = 5
 
-LOOP = 1
+LOOP = 2
 
 param = {
          'objective': 'binary',
@@ -63,17 +69,18 @@ VERBOSE_EVAL = 50
 USE_PREF = [
         'f001',
         'f003',
-#        'f004',
-#        'f005',
-        'f006',
         ]
 
 DROP = [
         
         ]
 
+#DESCRIPTION = OrderedDict()
+DESCRIPTION = {}
+
+
 # =============================================================================
-# load
+# load train
 # =============================================================================
 
 
@@ -98,7 +105,8 @@ y_train = utils.load_target()['target']
 
 
 # drop
-X_train.drop(DROP, axis=1, inplace=True)
+if len(DROP) > 0:
+    X_train.drop(DROP, axis=1, inplace=True)
 
 
 if X_train.columns.duplicated().sum()>0:
@@ -108,6 +116,10 @@ print(f'X_train.shape {X_train.shape}')
 
 gc.collect()
 
+COL = X_train.columns.tolist()
+
+DESCRIPTION['used files'] = ' '.join(USE_PREF)
+DESCRIPTION['feature size'] = len(COL)
 
 # =============================================================================
 # cv
@@ -161,11 +173,82 @@ for i,y_pred in enumerate(y_preds):
 oof /= len(y_preds)
 
 
-
 imp.to_csv(f'LOG/imp_{__file__}.csv', index=False)
 pd.DataFrame(oof, columns=['oof']).to_csv(f'../data/oof_{__file__}.csv', index=False)
 
 utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
+
+
+DESCRIPTION['oof AUC'] = round(roc_auc_score(y_train, oof), 5)
+
+del X_train, y_train; gc.collect()
+
+# =============================================================================
+# load test
+# =============================================================================
+
+
+files_te = sorted(glob('../data/test_f*.pkl'))
+
+# USE_PREF
+li = []
+for i in files_te:
+    for j in USE_PREF:
+        if j in i:
+            li.append(i)
+            break
+files_te = li
+
+[print(i,f) for i,f in enumerate(files_te)]
+
+X_test = pd.concat([
+                pd.read_pickle(f) for f in tqdm(files_te, mininterval=30)
+               ], axis=1)[COL]
+
+
+print(f'X_test.shape {X_test.shape}')
+
+gc.collect()
+
+# =============================================================================
+# predict
+# =============================================================================
+
+sub = pd.read_csv('../input/sample_submission.csv.zip')
+
+for model in tqdm(model_all):
+    sub['target'] += pd.Series(model.predict(X_test)).rank()
+sub['target'] /= sub['target'].max()
+
+
+
+# save
+sub.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
+
+DESCRIPTION[f'corr with best({utils.SUB_BEST.split("/")[-1]})'] = sub.target.corr(pd.read_csv(utils.SUB_BEST).target, method='spearman').round(5)
+
+print("""
+# =============================================================================
+# write down these info to benchmark.xlsx
+# =============================================================================
+""")
+for k,v in DESCRIPTION.items():
+    print(f'{k:<30}: {v}')
+
+
+print("""
+# =============================================================================
+""")
+
+
+# =============================================================================
+# submission
+# =============================================================================
+if EXE_SUBMIT:
+    print('submit')
+    utils.submit(SUBMIT_FILE_PATH, COMMENT)
+
+
 
 
 
