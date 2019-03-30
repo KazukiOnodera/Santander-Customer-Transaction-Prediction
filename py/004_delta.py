@@ -20,7 +20,7 @@ def fe(df):
     feature = pd.DataFrame(index=df.index)
     
     comb = list(combinations(df.columns, 2))
-    for c1,c2 in tqdm(comb):
+    for c1,c2 in tqdm(comb, mininterval=30):
         feature[f'{PREF}_{c1}-m-{c2}'] = (df[c1] - df[c2]).astype(np.float32)
     
     feature.iloc[:200000].to_pickle(f'../data/train_{PREF}.pkl')
