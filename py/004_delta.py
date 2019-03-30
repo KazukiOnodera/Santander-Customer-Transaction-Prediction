@@ -24,7 +24,7 @@ def fe(df):
         feature[f'{PREF}_{c1}-m-{c2}'] = (df[c1] - df[c2]).astype(np.float32)
     
     feature.iloc[:200000].to_pickle(f'../data/train_{PREF}.pkl')
-    feature.iloc[200000:].to_pickle(f'../data/test_{PREF}.pkl')
+    feature.iloc[200000:].reset_index(drop=True).to_pickle(f'../data/test_{PREF}.pkl')
     
     return
 

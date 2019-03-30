@@ -25,11 +25,10 @@ def fe(df):
     for i in [3,2,1]:
         for c in tqdm(df.columns):
             di = df[c].round(i).value_counts().to_dict()
-            feature[f'{c}_r{i}'] = df[c].round(i).map(di)
+            feature[f'{PREF}_{c}_r{i}'] = df[c].round(i).map(di)
     
-    feature = feature.add_prefix(PREF+'_')
     feature.iloc[:200000].to_pickle(f'../data/train_{PREF}.pkl')
-    feature.iloc[200000:].to_pickle(f'../data/test_{PREF}.pkl')
+    feature.iloc[200000:].reset_index(drop=True).to_pickle(f'../data/test_{PREF}.pkl')
     
     return
 
