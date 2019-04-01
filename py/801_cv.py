@@ -32,46 +32,46 @@ print('SEED:', SEED)
 
 NFOLD = 5
 
-LOOP = 1
-
-#param = {
-#         'objective': 'binary',
-#         'metric': 'None',
-#         
-#         'learning_rate': 0.1,
-#         'max_depth': -1,
-#         'num_leaves': 2**6 -1,
-#         'max_bin': 255,
-#         
-#         'min_child_weight': 10,
-#         'min_data_in_leaf': 150,
-#         'reg_lambda': 0.5,  # L2 regularization term on weights.
-#         'reg_alpha': 0.5,  # L1 regularization term on weights.
-#         
-#         'colsample_bytree': 0.5,
-#         'subsample': 0.7,
-##         'nthread': 32,
-#         'nthread': cpu_count(),
-#         'bagging_freq': 1,
-#         'verbose':-1,
-#         }
+LOOP = 2
 
 param = {
-   'bagging_freq': 5,
-   'bagging_fraction': 0.335,
-   'boost_from_average':'false',
-   'boost': 'gbdt',
-   'feature_fraction': 0.041,
-   'learning_rate': 0.0083,
-   'max_depth': -1,
-   'metric':'auc',
-   'min_data_in_leaf': 80,
-   'min_sum_hessian_in_leaf': 10.0,
-   'num_leaves': 13,
-   'num_threads': 8,
-   'tree_learner': 'serial',
-   'objective': 'binary',
-   'verbosity': 1}
+         'objective': 'binary',
+         'metric': 'None',
+         
+         'learning_rate': 0.01,
+         'max_depth': -1,
+         'num_leaves': 2**6 -1,
+         'max_bin': 255,
+         
+         'min_child_weight': 10,
+         'min_data_in_leaf': 150,
+         'reg_lambda': 0.5,  # L2 regularization term on weights.
+         'reg_alpha': 0.5,  # L1 regularization term on weights.
+         
+         'colsample_bytree': 0.5,
+         'subsample': 0.7,
+#         'nthread': 32,
+         'nthread': cpu_count(),
+         'bagging_freq': 5,
+         'verbose':-1,
+         }
+
+#param = {
+#   'bagging_freq': 5,
+#   'bagging_fraction': 0.335,
+#   'boost_from_average':'false',
+#   'boost': 'gbdt',
+#   'feature_fraction': 0.041,
+#   'learning_rate': 0.0083,
+#   'max_depth': -1,
+#   'metric':'auc',
+#   'min_data_in_leaf': 80,
+#   'min_sum_hessian_in_leaf': 10.0,
+#   'num_leaves': 13,
+#   'num_threads': 8,
+#   'tree_learner': 'serial',
+#   'objective': 'binary',
+#   'verbosity': 1}
 
 
 NROUND = 99999
@@ -82,7 +82,7 @@ USE_PREF = [
         'f001',
         'f003',
 #        'f004',
-#        'f005',
+        'f005',
 #        'f006',
 #        'f007',
 #        'f008',
@@ -192,7 +192,7 @@ pd.DataFrame(oof, columns=['oof']).to_csv(f'../data/oof_{__file__}.csv', index=F
 utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
 
 
-
+print('oof AUC:', round(roc_auc_score(y_train, oof), 5))
 
 #==============================================================================
 utils.end(__file__)
