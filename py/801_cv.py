@@ -23,7 +23,7 @@ from time import sleep
 from sklearn.metrics import roc_auc_score
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
 
 SEED = np.random.randint(9999)
