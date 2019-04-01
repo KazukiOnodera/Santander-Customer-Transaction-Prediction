@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 28 23:48:27 2019
+Created on Mon Apr  1 22:22:04 2019
 
-@author: Kazuki
+@author: kazuki.onodera
 """
+
 
 import numpy as np
 import pandas as pd
@@ -74,14 +75,14 @@ param = {
    'verbosity': 1}
 
 
-NROUND = 99999
+NROUND = 9999
 ESR = 100
 VERBOSE_EVAL = 50
 
 USE_PREF = [
         'f001',
-        'f003',
-#        'f004',
+#        'f003',
+        'f004',
 #        'f005',
 #        'f006',
 #        'f007',
@@ -118,8 +119,6 @@ X_train = pd.concat([
                 pd.read_pickle(f) for f in tqdm(files_tr, mininterval=30)
                ], axis=1)
 
-y_train = utils.load_target()['target']
-
 
 # drop
 X_train.drop(DROP, axis=1, inplace=True)
@@ -133,11 +132,36 @@ print(f'X_train.shape {X_train.shape}')
 gc.collect()
 
 
+files_te = sorted(glob('../data/test_f*.pkl'))
+
+# USE_PREF
+li = []
+for i in files_te:
+    for j in USE_PREF:
+        if j in i:
+            li.append(i)
+            break
+files_te = li
+
+[print(i,f) for i,f in enumerate(files_te)]
+
+X_test = pd.concat([
+                pd.read_pickle(f) for f in tqdm(files_te, mininterval=30)
+               ], axis=1)
+
+print(f'X_test.shape {X_test.shape}')
+
+gc.collect()
+
+
+X = pd.concat([X_train, X_test], ignore_index=True)
+y = pd.Series(np.r_[np.zeros(200000), (np.ones(100000))])
+
 # =============================================================================
 # cv
 # =============================================================================
 
-dtrain = lgb.Dataset(X_train, y_train.values, 
+dtrain = lgb.Dataset(X, y.values, 
                      free_raw_data=False)
 gc.collect()
 
@@ -158,7 +182,7 @@ for i in range(LOOP):
                          verbose_eval=VERBOSE_EVAL,
                          seed=SEED+i)
     
-    y_pred = ex.eval_oob(X_train, y_train.values, models, SEED+i, 
+    y_pred = ex.eval_oob(X, y.values, models, SEED+i, 
                          stratified=True, shuffle=True)
     y_preds.append(y_pred)
     
