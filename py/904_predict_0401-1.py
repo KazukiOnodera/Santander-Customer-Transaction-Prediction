@@ -56,7 +56,7 @@ param = {
          'subsample': 0.7,
 #         'nthread': 32,
          'nthread': cpu_count(),
-         'bagging_freq': 1,
+         'bagging_freq': 5,
          'verbose':-1,
          }
 
