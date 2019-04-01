@@ -1,0 +1,56 @@
+
+#==============================================================================
+# START!!! 802_adv.py    PID: 4588    time: 2019-04-01 13:34:42.371446
+#==============================================================================
+
+instance-1  START 802_adv.py  time: 0.00min
+SEED: 7585
+0 ../data/train_f001.pkl
+1 ../data/train_f003.pkl
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:09<00:00,  4.60s/it]
+no dup :) 
+X_train.shape (200000, 1000)
+0 ../data/test_f001.pkl
+1 ../data/test_f003.pkl
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:04<00:00,  2.10s/it]
+X_test.shape (100000, 1000)
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 80000, number of negative: 160000
+[LightGBM] [Info] Total Bins 145839
+[LightGBM] [Info] Number of data: 240000, number of used features: 999
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 80000, number of negative: 160000
+[LightGBM] [Info] Total Bins 145839
+[LightGBM] [Info] Number of data: 240000, number of used features: 999
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 80000, number of negative: 160000
+[LightGBM] [Info] Total Bins 145839
+[LightGBM] [Info] Number of data: 240000, number of used features: 999
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 80000, number of negative: 160000
+[LightGBM] [Info] Total Bins 145839
+[LightGBM] [Info] Number of data: 240000, number of used features: 999
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 80000, number of negative: 160000
+[LightGBM] [Info] Total Bins 145839
+[LightGBM] [Info] Number of data: 240000, number of used features: 999
+[50]	cv_agg's auc: 0.500927 + 0.00382917
+[100]	cv_agg's auc: 0.499462 + 0.00209428
+[150]	cv_agg's auc: 0.499641 + 0.0021697
+
+#==============================================================================
+# SUCCESS !!! 802_adv.py
+#==============================================================================
+
+time: 1.53min
+instance-1  FINISH 802_adv.py  time: 1.53min
