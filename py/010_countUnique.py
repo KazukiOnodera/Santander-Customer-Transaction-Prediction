@@ -25,6 +25,8 @@ def fe(df):
         di = df[c].value_counts().to_dict()
         feature[f'{PREF}_{c}'] = (df[c].map(di)==1)*1
     
+    feature[f'{PREF}_sum'] = feature.sum(1)
+    
     feature.iloc[:200000].to_pickle(f'../data/train_{PREF}.pkl')
     feature.iloc[200000:].reset_index(drop=True).to_pickle(f'../data/test_{PREF}.pkl')
     
