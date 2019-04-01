@@ -275,5 +275,5 @@ if EXE_SUBMIT:
 
 #==============================================================================
 utils.end(__file__)
-#utils.stop_instance()
+utils.stop_instance()
 
