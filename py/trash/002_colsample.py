@@ -32,7 +32,7 @@ def fe(df):
         feature[f'{PREF}_{i}_std'] = df[col].std(1)
     
     feature.iloc[:200000].to_pickle(f'../data/train_{PREF}.pkl')
-    feature.iloc[200000:].to_pickle(f'../data/test_{PREF}.pkl')
+    feature.iloc[200000:].reset_index(drop=True).to_pickle(f'../data/test_{PREF}.pkl')
     
     return
 
@@ -45,6 +45,7 @@ if __name__ == "__main__":
     
     tr = utils.load_train().drop(['ID_code', 'target'], axis=1)
     te = utils.load_test().drop(['ID_code'], axis=1)
+    te = te.drop(np.load('../data/fake_index.npy'))
     
     trte = pd.concat([tr, te], ignore_index=True)[tr.columns]
     

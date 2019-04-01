@@ -41,6 +41,7 @@ if __name__ == "__main__":
     
     tr = utils.load_train().drop(['ID_code', 'target'], axis=1)
     te = utils.load_test().drop(['ID_code'], axis=1)
+    te = te.drop(np.load('../data/fake_index.npy'))
     
     trte = pd.concat([tr, te], ignore_index=True)[tr.columns]
     

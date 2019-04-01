@@ -8,9 +8,8 @@ Created on Thu Feb 14 17:35:13 2019
 
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
+from tqdm import tqdm
 import utils
-
 
 
 # =============================================================================
@@ -27,21 +26,20 @@ if __name__ == "__main__":
     te.to_pickle('../data/test.pkl')
     
     
-    # MinMaxScaler
-    trte = pd.concat([tr, te], ignore_index=True)[tr.columns]
+    # ===== fake samples =====
+    te_ = te.drop(['ID_code'], axis=1).values
     
-    sc = MinMaxScaler()
+    unique_samples = []
+    unique_count = np.zeros_like(te_)
+    for feature in tqdm(range(te_.shape[1])):
+        _, index_, count_ = np.unique(te_[:, feature], return_counts=True, return_index=True)
+        unique_count[index_[count_ == 1], feature] += 1
     
-    trte_ = pd.DataFrame(sc.fit_transform(trte.iloc[:, 2:]), 
-                         columns=tr.columns[2:])
-    trte_ = pd.concat([trte[['ID_code', 'target']], trte_], axis=1)
+    # Samples which have unique values are real the others are fake
+    real_samples_indexes = np.argwhere(np.sum(unique_count, axis=1) > 0)[:, 0]
+    synthetic_samples_indexes = np.argwhere(np.sum(unique_count, axis=1) == 0)[:, 0]
     
-    tr_ = trte_[trte_.target.notnull()]
-    te_ = trte_[trte_.target.isnull()]
-    del te_['target']
-    tr_.to_pickle('../data/train_min0max1.pkl')
-    te_.to_pickle('../data/test_min0max1.pkl')
-    
+    np.save('../data/fake_index', synthetic_samples_indexes)
     
     
     

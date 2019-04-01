@@ -24,7 +24,8 @@ if __name__ == "__main__":
     tr.add_prefix(PREF+'_').to_pickle(f'../data/train_{PREF}.pkl')
     
     te = utils.load_test().drop(['ID_code'], axis=1)
-    te.add_prefix(PREF+'_').to_pickle(f'../data/test_{PREF}.pkl')
+    fake_index = np.load('../data/fake_index.npy')
+    te.drop(fake_index).add_prefix(PREF+'_').reset_index(drop=True).to_pickle(f'../data/test_{PREF}.pkl')
     
     
     utils.end(__file__)
