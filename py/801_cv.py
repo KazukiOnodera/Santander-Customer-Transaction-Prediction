@@ -17,7 +17,8 @@ sys.path.append(f'/home/{os.environ.get("USER")}/PythonLibrary')
 import lgbextension as ex
 import lightgbm as lgb
 from multiprocessing import cpu_count
-from sklearn.externals import joblib
+from time import sleep
+#sleep(60 * 5)
 
 from sklearn.metrics import roc_auc_score
 
@@ -37,7 +38,7 @@ param = {
          'objective': 'binary',
          'metric': 'None',
          
-         'learning_rate': 0.01,
+         'learning_rate': 0.1,
          'max_depth': -1,
          'num_leaves': 2**6 -1,
          'max_bin': 255,
@@ -62,10 +63,13 @@ VERBOSE_EVAL = 50
 
 USE_PREF = [
         'f001',
-        'f003',
+#        'f003',
 #        'f004',
 #        'f005',
-        'f006',
+#        'f006',
+#        'f007',
+#        'f008',
+        'f009',
         ]
 
 DROP = [
