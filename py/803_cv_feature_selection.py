@@ -144,7 +144,7 @@ for i in range(100, 900, 100):
     nround_mean += len(ret['auc-mean'])
     loss_list.append( ret['auc-mean'][-1] )
     
-    utils.send_line(f'oof AUC: {round(roc_auc_score(y_train, p_train), 5)}')
+    utils.send_line(f'oof AUC({i}): {round(roc_auc_score(y_train, p_train), 5)}')
 
 
 
