@@ -137,7 +137,7 @@ for i in range(100, 900, 100):
                          verbose_eval=VERBOSE_EVAL,
                          seed=SEED+i)
     
-    p_train = ex.eval_oob(X_train, y_train.values, models, SEED+i, 
+    p_train = ex.eval_oob(X_train[col], y_train.values, models, SEED+i, 
                          stratified=True, shuffle=True)
     
     model_all += models
