@@ -22,7 +22,7 @@ def fe(df):
         di = df[c].value_counts().to_dict()
         feature[f'{PREF}_{c}'] = df[c].map(di)
     
-    for i in [3,2,1]:
+    for i in [3,2,1,0]:
         for c in tqdm(df.columns):
             di = df[c].round(i).value_counts().to_dict()
             feature[f'{PREF}_{c}_r{i}'] = df[c].round(i).map(di)
