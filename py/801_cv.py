@@ -41,6 +41,7 @@ param = {
          'learning_rate': 0.01,
          'max_depth': -1,
          'num_leaves': 2**6 -1,
+#         'num_leaves': 2**4 -1,
          'max_bin': 255,
          
          'min_child_weight': 10,
@@ -83,10 +84,10 @@ USE_PREF = [
         'f003',
 #        'f004',
 #        'f005',
-        'f006',
+#        'f006',
 #        'f007',
 #        'f008',
-#        'f009',
+        'f009',
 #        'f010',
 #        'f011',
 #        'f012',
@@ -192,7 +193,7 @@ pd.DataFrame(oof, columns=['oof']).to_csv(f'../data/oof_{__file__}.csv', index=F
 utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
 
 
-print('oof AUC:', round(roc_auc_score(y_train, oof), 5))
+utils.send_line(f'oof AUC: {round(roc_auc_score(y_train, oof), 5)}')
 
 #==============================================================================
 utils.end(__file__)

@@ -1,28 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr  2 11:16:51 2019
+Created on Tue Apr  2 13:45:15 2019
 
-@author: Kazuki
+@author: kazuki.onodera
 """
 
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
-from sklearn.preprocessing import KBinsDiscretizer
 import utils
 
-PREF = 'f006'
+PREF = 'f007'
 
-est = KBinsDiscretizer(n_bins=100, encode='ordinal', strategy='uniform')
 
 def fe(df):
     
     feature = pd.DataFrame(index=df.index)
-    df = pd.DataFrame(est.fit_transform(df), columns=df.columns)
     
     for c in tqdm(df.columns):
-        di = df[c].value_counts().sort_index().diff().to_dict()
+        di = df[c].value_counts().value_counts().to_dict()
         feature[f'{PREF}_{c}'] = df[c].map(di)
     
 #    for i in [3,2,1]:
@@ -44,7 +41,7 @@ if __name__ == "__main__":
     
     tr = utils.load_train().drop(['ID_code', 'target'], axis=1)
     te = utils.load_test().drop(['ID_code'], axis=1)
-    te.drop(np.load('../data/fake_index.npy'), inplace=True)
+    te = te.drop(np.load('../data/fake_index.npy'))
     
     trte = pd.concat([tr, te], ignore_index=True)[tr.columns]
     
