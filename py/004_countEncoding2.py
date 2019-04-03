@@ -12,7 +12,7 @@ from tqdm import tqdm
 from itertools import combinations
 import utils
 
-PREF = 'f010'
+PREF = 'f004'
 
 
 def fe(df):
