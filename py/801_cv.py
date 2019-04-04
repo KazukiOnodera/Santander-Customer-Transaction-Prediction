@@ -104,7 +104,7 @@ DROP = [
 # =============================================================================
 
 
-files_tr = sorted(glob('../data/train_f*.pkl'))
+files_tr = sorted(glob('../data/*/train_f*.pkl'))
 
 # USE_PREF
 li = []

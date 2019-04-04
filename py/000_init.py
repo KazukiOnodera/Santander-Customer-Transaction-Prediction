@@ -9,6 +9,7 @@ Created on Thu Feb 14 17:35:13 2019
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+import os
 import utils
 
 # rename var_0 into var_000
@@ -44,6 +45,8 @@ if __name__ == "__main__":
     
     np.save('../data/fake_index', synthetic_samples_indexes)
     
+    for cmd in [f'mkdir ../data/var_{i:03}' for i in range(200)]:
+        os.system(cmd)
     
     
     utils.end(__file__)

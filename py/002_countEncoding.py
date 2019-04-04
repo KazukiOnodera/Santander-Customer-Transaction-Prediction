@@ -14,6 +14,22 @@ import utils
 PREF = 'f002'
 
 
+dirs  = [f'../data/var_{i:03}' for i in range(200)]
+var_names = [f'var_{i:03}' for i in range(200)]
+
+d_v = list(zip(dirs, var_names))
+
+def output(df, name):
+    """
+    name: 'train' or 'test'
+    """
+    
+    for d,v in tqdm(d_v):
+        df.filter(regex=f'^(?=.*{v}).*$').to_pickle(f'{d}/{name}_{PREF}.pkl')
+    
+    return
+
+
 def fe(df):
     
     feature = pd.DataFrame(index=df.index)
@@ -27,8 +43,11 @@ def fe(df):
             di = df[c].round(i).value_counts().to_dict()
             feature[f'{PREF}_{c}_r{i}'] = df[c].round(i).map(di)
     
-    feature.iloc[:200000].to_pickle(f'../data/train_{PREF}.pkl')
-    feature.iloc[200000:].reset_index(drop=True).to_pickle(f'../data/test_{PREF}.pkl')
+    tr_ = feature.iloc[:200000]
+    output(tr_, 'train')
+    
+    te_ = feature.iloc[200000:].reset_index(drop=True)
+    output(te_, 'test')
     
     return
 
