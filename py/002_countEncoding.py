@@ -11,7 +11,7 @@ import pandas as pd
 from tqdm import tqdm
 import utils
 
-PREF = 'f003'
+PREF = 'f002'
 
 
 def fe(df):

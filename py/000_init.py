@@ -11,6 +11,9 @@ import pandas as pd
 from tqdm import tqdm
 import utils
 
+# rename var_0 into var_000
+di = dict(zip([f'var_{i}' for i in range(200)], 
+              [f'var_{i:03}' for i in range(200)]))
 
 # =============================================================================
 # main
@@ -18,8 +21,8 @@ import utils
 if __name__ == "__main__":
     utils.start(__file__)
     
-    tr = pd.read_csv('../input/train.csv.zip')
-    te = pd.read_csv('../input/test.csv.zip')
+    tr = pd.read_csv('../input/train.csv.zip').rename(columns=di)
+    te = pd.read_csv('../input/test.csv.zip').rename(columns=di)
     
     tr.to_pickle('../data/train.pkl')
     tr[['target']].to_pickle('../data/target.pkl')
