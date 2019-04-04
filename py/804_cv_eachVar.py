@@ -32,7 +32,7 @@ print('SEED:', SEED)
 
 NFOLD = 5
 
-LOOP = 2
+LOOP = 1
 
 param = {
          'objective': 'binary',
@@ -84,7 +84,7 @@ USE_PREF = [
         'f001',
         'f002',
 #        'f003',
-#        'f004',
+        'f004',
 #        'f005',
 #        'f006',
 #        'f007',
@@ -135,8 +135,8 @@ def load(var):
 # =============================================================================
 
 for v in var_names:
-    
-    dtrain = lgb.Dataset(load(v).filter(regex=f'^(?=.*{v}).*$'), y_train.values, 
+    X_train = load(v).filter(regex=f'^(?=.*{v}).*$')
+    dtrain = lgb.Dataset(X_train, y_train.values, 
                          free_raw_data=False)
     gc.collect()
     
