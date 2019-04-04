@@ -128,6 +128,8 @@ def load(var):
     print(f'X_train.shape {X_train.shape}')
     
     gc.collect()
+    
+    return X_train
 
 
 # =============================================================================
