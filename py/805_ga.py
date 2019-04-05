@@ -74,7 +74,7 @@ ga = GA.GA(THRESHOLD,
             maximize=True, 
             is_print=0,
             n_jobs=8,
-            to_csv='LOG/ga{i}.csv'
+            to_csv='LOG/ga.csv'
             )
 
 
