@@ -193,7 +193,7 @@ for v in var_names:
     utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
     
     
-    utils.send_line(f'oof AUC: {round(roc_auc_score(y_train, oof), 5)}')
+    utils.send_line(f'oof AUC({v}): {round(roc_auc_score(y_train, oof), 5)}')
 
 #==============================================================================
 utils.end(__file__)
