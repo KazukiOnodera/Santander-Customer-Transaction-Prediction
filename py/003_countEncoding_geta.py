@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 28 23:55:50 2019
+Created on Sat Apr  6 20:22:00 2019
 
 @author: Kazuki
 """
@@ -11,17 +11,13 @@ import pandas as pd
 from tqdm import tqdm
 import utils
 
-PREF = 'f002'
+PREF = 'f003'
 
 
 dirs  = [f'../data/var_{i:03}' for i in range(200)]
 var_names = [f'var_{i:03}' for i in range(200)]
 
 d_v = list(zip(dirs, var_names))
-
-def my_round(val, digit=0):
-    p = 10 ** digit
-    return (val * p * 2 + 1) // 2 / p
 
 def output(df, name):
     """
@@ -38,16 +34,14 @@ def fe(df):
     
     feature = pd.DataFrame(index=df.index)
     
-    for c in tqdm(df.columns):
-        di = df[c].value_counts().to_dict()
-        feature[f'{PREF}_{c}'] = df[c].map(di)
-    
-    for i in [3,2,1,0]:
-        p = (10 ** i)
-        for c in tqdm(df.columns):
-            s = (df[c] * p * 2 + 1) // 2 / p # round
-            di = s.value_counts().to_dict()
-            feature[f'{PREF}_{c}_r{i}'] = s.map(di)
+    for GETA in range(1,10):
+        for i in [3,2,1,0]:
+            p = (10 ** i)
+            geta = GETA / (10 ** (i+1))
+            for c in tqdm(df.columns):
+                s = ((df[c] + geta) * p * 2 + 1) // 2 / p # round
+                di = s.value_counts().to_dict()
+                feature[f'{PREF}_{c}_g{GETA}_r{i}'] = s.map(di)
     
     tr_ = feature.iloc[:200000]
     output(tr_, 'train')
