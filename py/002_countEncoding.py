@@ -19,6 +19,10 @@ var_names = [f'var_{i:03}' for i in range(200)]
 
 d_v = list(zip(dirs, var_names))
 
+def my_round(val, digit=0):
+    p = 10 ** digit
+    return (val * p * 2 + 1) // 2 / p
+
 def output(df, name):
     """
     name: 'train' or 'test'
@@ -40,8 +44,9 @@ def fe(df):
     
     for i in [3,2,1,0]:
         for c in tqdm(df.columns):
-            di = df[c].round(i).value_counts().to_dict()
-            feature[f'{PREF}_{c}_r{i}'] = df[c].round(i).map(di)
+            s = (df[c] * (10 ** i) * 2 + 1) // 2 / (10 ** i) # round
+            di = s.value_counts().to_dict()
+            feature[f'{PREF}_{c}_r{i}'] = s.map(di)
     
     tr_ = feature.iloc[:200000]
     output(tr_, 'train')
