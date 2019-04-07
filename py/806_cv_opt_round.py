@@ -226,7 +226,7 @@ for var in var_names:
         oof /= len(y_preds)
         
         auc = round(roc_auc_score(y_train, oof), 5)
-        print(auc)
+        
         if auc_best < auc:
             auc_best = auc
             round_best = round_
@@ -238,13 +238,16 @@ for var in var_names:
     
     result_all.append(result)
         
-    pd.DataFrame(oof, columns=['oof']).to_pickle(f'../data/806/oof_{__file__}.pkl', index=False)
+    oof_best = pd.DataFrame(oof_best, columns=['oof'])
+    oof_best.to_pickle(f'../data/806/oof_{__file__}_{var}_r{round_best}.pkl')
     
 #    imp.to_csv(f'LOG/imp_{__file__}.csv', index=False)
 #    utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
 
-result_all = pd.DataFrame(result_all, columns=['r4', 'r3', 'r2', 'r1', 'r0'])
-
+result_all = pd.DataFrame(result_all, 
+                          columns=['r4', 'r3', 'r2', 'r1', 'r0'],
+                          index=var_names)
+result_all.to_csv(f'LOG/auc_{__file__}.csv', index=False)
 
 #==============================================================================
 utils.end(__file__)
