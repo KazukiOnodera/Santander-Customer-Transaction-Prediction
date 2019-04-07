@@ -73,7 +73,7 @@ param = {
     'min_data_in_leaf': 10,
     'min_sum_hessian_in_leaf': 10.0,
     'num_leaves': 4,
-    'num_threads': 32,
+    'num_threads': cpu_count(),
     'tree_learner': 'serial',
     'objective': 'binary',
     'verbosity': -1,
