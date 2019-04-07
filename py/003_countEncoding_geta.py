@@ -38,6 +38,7 @@ def fe(df):
         for i in [3,2,1,0]:
             p = (10 ** i)
             geta = GETA / (10 ** (i+1))
+            print(f'g{GETA}_r{i}')
             for c in tqdm(df.columns):
                 s = ((df[c] + geta) * p * 2 + 1) // 2 / p # round
                 di = s.value_counts().to_dict()

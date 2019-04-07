@@ -34,46 +34,45 @@ NFOLD = 5
 
 LOOP = 1
 
-param = {
-         'objective': 'binary',
-         'metric': 'None',
-         
-         'learning_rate': 0.01,
-         'max_depth': -1,
-         'num_leaves': 2**6 -1,
-#         'num_leaves': 2**4 -1,
-         'max_bin': 255,
-         
-         'min_child_weight': 10,
-         'min_data_in_leaf': 150,
-         'reg_lambda': 0.5,  # L2 regularization term on weights.
-         'reg_alpha': 0.5,  # L1 regularization term on weights.
-         
-         'colsample_bytree': 0.5,
-         'subsample': 0.7,
-#         'nthread': 32,
-         'nthread': cpu_count(),
-         'bagging_freq': 5,
-         'verbose':-1,
-         }
-
 #param = {
-#    'bagging_freq': 5,
-#    'bagging_fraction': 0.8,
-#    'boost_from_average':'false',
-#    'boost': 'gbdt',
-#    'feature_fraction': 0.6,
-#    'learning_rate': 0.0083,
-#    'max_depth': -1,
-#    'metric':'auc',
-#    'min_data_in_leaf': 80,
-#    'min_sum_hessian_in_leaf': 10.0,
-#    'num_leaves': 10,
-#    'num_threads': -1,
-#    'tree_learner': 'serial',
-#    'objective': 'binary',
-#    'verbosity': -1,
-#    }
+#         'objective': 'binary',
+#         'metric': 'None',
+#         
+#         'learning_rate': 0.01,
+#         'max_depth': -1,
+#         'num_leaves': 2**6 -1,
+##         'num_leaves': 2**4 -1,
+#         'max_bin': 255,
+#         
+#         'min_child_weight': 10,
+#         'min_data_in_leaf': 150,
+#         'reg_lambda': 0.5,  # L2 regularization term on weights.
+#         'reg_alpha': 0.5,  # L1 regularization term on weights.
+#         
+#         'colsample_bytree': 0.5,
+#         'subsample': 0.7,
+##         'nthread': 32,
+#         'nthread': cpu_count(),
+#         'bagging_freq': 5,
+#         'verbose':-1,
+#         }
+
+param = {
+    'bagging_freq': 5,
+    'bagging_fraction': 0.9,
+    'boost_from_average':'false',
+    'boost': 'gbdt',
+    'feature_fraction': 1.0,
+    'learning_rate': 0.05,
+    'max_depth': -1,
+    'metric':'binary_logloss',
+    'min_data_in_leaf': 10,
+    'min_sum_hessian_in_leaf': 10.0,
+    'num_leaves': 4,
+    'num_threads': 32,
+    'tree_learner': 'serial',
+    'objective': 'binary',
+    'verbosity': 1}
 
 
 NROUND = 99999
@@ -83,8 +82,8 @@ VERBOSE_EVAL = 50
 USE_PREF = [
         'f001',
         'f002',
-#        'f003',
-        'f004',
+        'f003',
+#        'f004',
 #        'f005',
 #        'f006',
 #        'f007',
@@ -136,8 +135,8 @@ def load(var):
 # cv
 # =============================================================================
 
-for v in var_names:
-    X_train = load(v).filter(regex=f'^(?=.*{v}).*$')
+for var in var_names:
+    X_train = load(var).filter(regex=f'^(?=.*{v}).*$')
     dtrain = lgb.Dataset(X_train, y_train.values, 
                          free_raw_data=False)
     gc.collect()
