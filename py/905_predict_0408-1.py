@@ -37,7 +37,7 @@ params = {
     'boost_from_average':'false',
     'boost': 'gbdt',
     'feature_fraction': 1.0,
-    'learning_rate': 0.005,
+    'learning_rate': 0.05,
     'max_depth': -1,
     'metric':'binary_logloss',
     'min_data_in_leaf': 30,
@@ -51,7 +51,7 @@ params = {
 
 NFOLD = 5
 
-NROUND = 1500
+NROUND = 150
 
 
 SEED = 4081
