@@ -247,7 +247,7 @@ for var in var_names:
 result_all = pd.DataFrame(result_all, 
                           columns=['r4', 'r3', 'r2', 'r1', 'r0'],
                           index=var_names)
-result_all.to_csv(f'LOG/auc_{__file__}.csv', index=False)
+result_all.to_csv(f'LOG/auc_{__file__}.csv')
 
 #==============================================================================
 utils.end(__file__)
