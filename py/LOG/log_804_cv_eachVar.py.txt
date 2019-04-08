@@ -1,0 +1,1895 @@
+
+#==============================================================================
+# START!!! 804_cv_eachVar.py    PID: 6551    time: 2019-04-05 00:01:22.223899
+#==============================================================================
+
+instance-1  START 804_cv_eachVar.py  time: 0.00min
+SEED: 865
+0 ../data/var_000/train_f001.pkl
+1 ../data/var_000/train_f002.pkl
+2 ../data/var_000/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 131.62it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.547156 + 0.00486561
+[100]	cv_agg's auc: 0.546571 + 0.00380638
+oof AUC(var_000): 0.54602
+0 ../data/var_001/train_f001.pkl
+1 ../data/var_001/train_f002.pkl
+2 ../data/var_001/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 214.87it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.542996 + 0.00399904
+[100]	cv_agg's auc: 0.543976 + 0.00455221
+[150]	cv_agg's auc: 0.543612 + 0.00489778
+[200]	cv_agg's auc: 0.54309 + 0.00477386
+oof AUC(var_001): 0.54291
+0 ../data/var_002/train_f001.pkl
+1 ../data/var_002/train_f002.pkl
+2 ../data/var_002/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 325.92it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.550852 + 0.00432579
+[100]	cv_agg's auc: 0.550378 + 0.00433977
+oof AUC(var_002): 0.54997
+0 ../data/var_003/train_f001.pkl
+1 ../data/var_003/train_f002.pkl
+2 ../data/var_003/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 301.19it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.504231 + 0.00421329
+[100]	cv_agg's auc: 0.505145 + 0.00426826
+oof AUC(var_003): 0.50495
+0 ../data/var_004/train_f001.pkl
+1 ../data/var_004/train_f002.pkl
+2 ../data/var_004/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 300.21it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.505548 + 0.0044903
+[100]	cv_agg's auc: 0.506671 + 0.00402289
+oof AUC(var_004): 0.50653
+0 ../data/var_005/train_f001.pkl
+1 ../data/var_005/train_f002.pkl
+2 ../data/var_005/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.90it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.52442 + 0.00578611
+[100]	cv_agg's auc: 0.523754 + 0.00526284
+oof AUC(var_005): 0.52352
+0 ../data/var_006/train_f001.pkl
+1 ../data/var_006/train_f002.pkl
+2 ../data/var_006/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.17it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.558135 + 0.00284516
+[100]	cv_agg's auc: 0.557852 + 0.00308641
+oof AUC(var_006): 0.55734
+0 ../data/var_007/train_f001.pkl
+1 ../data/var_007/train_f002.pkl
+2 ../data/var_007/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.71it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.498533 + 0.00357476
+[100]	cv_agg's auc: 0.497859 + 0.00245919
+[150]	cv_agg's auc: 0.497269 + 0.00160887
+oof AUC(var_007): 0.4974
+0 ../data/var_008/train_f001.pkl
+1 ../data/var_008/train_f002.pkl
+2 ../data/var_008/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.85it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.517904 + 0.00264639
+[100]	cv_agg's auc: 0.517061 + 0.00418137
+oof AUC(var_008): 0.5173
+0 ../data/var_009/train_f001.pkl
+1 ../data/var_009/train_f002.pkl
+2 ../data/var_009/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.29it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.540533 + 0.00550742
+[100]	cv_agg's auc: 0.539714 + 0.00539745
+oof AUC(var_009): 0.53856
+0 ../data/var_010/train_f001.pkl
+1 ../data/var_010/train_f002.pkl
+2 ../data/var_010/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.32it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.497778 + 0.00228285
+[100]	cv_agg's auc: 0.498135 + 0.00234967
+oof AUC(var_010): 0.49817
+0 ../data/var_011/train_f001.pkl
+1 ../data/var_011/train_f002.pkl
+2 ../data/var_011/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.80it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513387 + 0.00481161
+[100]	cv_agg's auc: 0.514246 + 0.00472415
+oof AUC(var_011): 0.51416
+0 ../data/var_012/train_f001.pkl
+1 ../data/var_012/train_f002.pkl
+2 ../data/var_012/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.88it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.556652 + 0.00288975
+[100]	cv_agg's auc: 0.55597 + 0.00289427
+oof AUC(var_012): 0.55528
+0 ../data/var_013/train_f001.pkl
+1 ../data/var_013/train_f002.pkl
+2 ../data/var_013/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.88it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.551554 + 0.00377702
+[100]	cv_agg's auc: 0.550919 + 0.00420992
+oof AUC(var_013): 0.55028
+0 ../data/var_014/train_f001.pkl
+1 ../data/var_014/train_f002.pkl
+2 ../data/var_014/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.13it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502517 + 0.00305701
+[100]	cv_agg's auc: 0.503048 + 0.0042038
+[150]	cv_agg's auc: 0.503692 + 0.0046618
+[200]	cv_agg's auc: 0.503487 + 0.00483625
+oof AUC(var_014): 0.50323
+0 ../data/var_015/train_f001.pkl
+1 ../data/var_015/train_f002.pkl
+2 ../data/var_015/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.15it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.514527 + 0.00604034
+[100]	cv_agg's auc: 0.514518 + 0.0060258
+oof AUC(var_015): 0.5146
+0 ../data/var_016/train_f001.pkl
+1 ../data/var_016/train_f002.pkl
+2 ../data/var_016/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.04it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506276 + 0.00342666
+[100]	cv_agg's auc: 0.505762 + 0.00393216
+oof AUC(var_016): 0.50594
+0 ../data/var_017/train_f001.pkl
+1 ../data/var_017/train_f002.pkl
+2 ../data/var_017/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.71it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.496121 + 0.00444776
+[100]	cv_agg's auc: 0.495049 + 0.00378173
+oof AUC(var_017): 0.49492
+0 ../data/var_018/train_f001.pkl
+1 ../data/var_018/train_f002.pkl
+2 ../data/var_018/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.48it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.534598 + 0.00450652
+[100]	cv_agg's auc: 0.533734 + 0.00466909
+oof AUC(var_018): 0.53343
+0 ../data/var_019/train_f001.pkl
+1 ../data/var_019/train_f002.pkl
+2 ../data/var_019/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.85it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.504931 + 0.0026915
+[100]	cv_agg's auc: 0.505473 + 0.00249456
+oof AUC(var_019): 0.50539
+0 ../data/var_020/train_f001.pkl
+1 ../data/var_020/train_f002.pkl
+2 ../data/var_020/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.22it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.516062 + 0.00134159
+[100]	cv_agg's auc: 0.516495 + 0.00159428
+oof AUC(var_020): 0.51598
+0 ../data/var_021/train_f001.pkl
+1 ../data/var_021/train_f002.pkl
+2 ../data/var_021/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.98it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.554606 + 0.00573713
+[100]	cv_agg's auc: 0.554574 + 0.00545373
+[150]	cv_agg's auc: 0.55485 + 0.00558144
+oof AUC(var_021): 0.5543
+0 ../data/var_022/train_f001.pkl
+1 ../data/var_022/train_f002.pkl
+2 ../data/var_022/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.08it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.549427 + 0.00443749
+[100]	cv_agg's auc: 0.548643 + 0.00501
+oof AUC(var_022): 0.54837
+0 ../data/var_023/train_f001.pkl
+1 ../data/var_023/train_f002.pkl
+2 ../data/var_023/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.87it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.516849 + 0.00417494
+[100]	cv_agg's auc: 0.516645 + 0.00478292
+[150]	cv_agg's auc: 0.51626 + 0.0045861
+oof AUC(var_023): 0.51607
+0 ../data/var_024/train_f001.pkl
+1 ../data/var_024/train_f002.pkl
+2 ../data/var_024/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.10it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523472 + 0.00531196
+[100]	cv_agg's auc: 0.523891 + 0.0051398
+[150]	cv_agg's auc: 0.523379 + 0.00537524
+oof AUC(var_024): 0.52339
+0 ../data/var_025/train_f001.pkl
+1 ../data/var_025/train_f002.pkl
+2 ../data/var_025/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.31it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.503761 + 0.00491062
+[100]	cv_agg's auc: 0.504402 + 0.00440208
+oof AUC(var_025): 0.50449
+0 ../data/var_026/train_f001.pkl
+1 ../data/var_026/train_f002.pkl
+2 ../data/var_026/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.99it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.554164 + 0.00378139
+[100]	cv_agg's auc: 0.554348 + 0.0039713
+[150]	cv_agg's auc: 0.553963 + 0.00431774
+[200]	cv_agg's auc: 0.55323 + 0.0046657
+oof AUC(var_026): 0.55312
+0 ../data/var_027/train_f001.pkl
+1 ../data/var_027/train_f002.pkl
+2 ../data/var_027/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.89it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.500266 + 0.0050959
+[100]	cv_agg's auc: 0.500479 + 0.0041973
+[150]	cv_agg's auc: 0.500693 + 0.00398505
+[200]	cv_agg's auc: 0.501171 + 0.00353238
+[250]	cv_agg's auc: 0.501442 + 0.00310274
+[300]	cv_agg's auc: 0.500839 + 0.00342974
+oof AUC(var_027): 0.50092
+0 ../data/var_028/train_f001.pkl
+1 ../data/var_028/train_f002.pkl
+2 ../data/var_028/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.97it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.520146 + 0.00331735
+[100]	cv_agg's auc: 0.520006 + 0.00328741
+oof AUC(var_028): 0.52007
+0 ../data/var_029/train_f001.pkl
+1 ../data/var_029/train_f002.pkl
+2 ../data/var_029/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.71it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.500473 + 0.00369535
+[100]	cv_agg's auc: 0.500384 + 0.00369219
+oof AUC(var_029): 0.49981
+0 ../data/var_030/train_f001.pkl
+1 ../data/var_030/train_f002.pkl
+2 ../data/var_030/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.98it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.501383 + 0.00375977
+[100]	cv_agg's auc: 0.501608 + 0.0028903
+oof AUC(var_030): 0.50139
+0 ../data/var_031/train_f001.pkl
+1 ../data/var_031/train_f002.pkl
+2 ../data/var_031/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.68it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523954 + 0.00273065
+[100]	cv_agg's auc: 0.523367 + 0.00297304
+oof AUC(var_031): 0.52292
+0 ../data/var_032/train_f001.pkl
+1 ../data/var_032/train_f002.pkl
+2 ../data/var_032/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.55it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.521628 + 0.00517223
+[100]	cv_agg's auc: 0.52052 + 0.00505398
+oof AUC(var_032): 0.51963
+0 ../data/var_033/train_f001.pkl
+1 ../data/var_033/train_f002.pkl
+2 ../data/var_033/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.28it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.535024 + 0.00514333
+[100]	cv_agg's auc: 0.535092 + 0.00622007
+oof AUC(var_033): 0.53432
+0 ../data/var_034/train_f001.pkl
+1 ../data/var_034/train_f002.pkl
+2 ../data/var_034/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.78it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.541996 + 0.00156862
+[100]	cv_agg's auc: 0.541518 + 0.00180303
+oof AUC(var_034): 0.54121
+0 ../data/var_035/train_f001.pkl
+1 ../data/var_035/train_f002.pkl
+2 ../data/var_035/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.45it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.531915 + 0.0021498
+[100]	cv_agg's auc: 0.531197 + 0.00213286
+oof AUC(var_035): 0.53086
+0 ../data/var_036/train_f001.pkl
+1 ../data/var_036/train_f002.pkl
+2 ../data/var_036/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.64it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.533897 + 0.00493823
+[100]	cv_agg's auc: 0.534056 + 0.00519757
+[150]	cv_agg's auc: 0.533085 + 0.00544341
+oof AUC(var_036): 0.53251
+0 ../data/var_037/train_f001.pkl
+1 ../data/var_037/train_f002.pkl
+2 ../data/var_037/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.44it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.505996 + 0.00381666
+[100]	cv_agg's auc: 0.506392 + 0.00201388
+oof AUC(var_037): 0.50657
+0 ../data/var_038/train_f001.pkl
+1 ../data/var_038/train_f002.pkl
+2 ../data/var_038/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.45it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.498534 + 0.00298844
+[100]	cv_agg's auc: 0.498343 + 0.00376882
+oof AUC(var_038): 0.49815
+0 ../data/var_039/train_f001.pkl
+1 ../data/var_039/train_f002.pkl
+2 ../data/var_039/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.79it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.497826 + 0.00374466
+[100]	cv_agg's auc: 0.498077 + 0.0044215
+oof AUC(var_039): 0.49827
+0 ../data/var_040/train_f001.pkl
+1 ../data/var_040/train_f002.pkl
+2 ../data/var_040/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.81it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.541675 + 0.00559202
+[100]	cv_agg's auc: 0.5409 + 0.00550326
+oof AUC(var_040): 0.53992
+0 ../data/var_041/train_f001.pkl
+1 ../data/var_041/train_f002.pkl
+2 ../data/var_041/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.34it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.503609 + 0.00426156
+[100]	cv_agg's auc: 0.501964 + 0.00509162
+oof AUC(var_041): 0.50164
+0 ../data/var_042/train_f001.pkl
+1 ../data/var_042/train_f002.pkl
+2 ../data/var_042/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.90it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.497864 + 0.00509966
+[100]	cv_agg's auc: 0.498341 + 0.0059843
+oof AUC(var_042): 0.49835
+0 ../data/var_043/train_f001.pkl
+1 ../data/var_043/train_f002.pkl
+2 ../data/var_043/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.78it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.521438 + 0.00288712
+[100]	cv_agg's auc: 0.520191 + 0.00327563
+oof AUC(var_043): 0.51968
+0 ../data/var_044/train_f001.pkl
+1 ../data/var_044/train_f002.pkl
+2 ../data/var_044/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.18it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.541603 + 0.00282862
+[100]	cv_agg's auc: 0.542418 + 0.00363909
+[150]	cv_agg's auc: 0.542413 + 0.00341297
+oof AUC(var_044): 0.54162
+0 ../data/var_045/train_f001.pkl
+1 ../data/var_045/train_f002.pkl
+2 ../data/var_045/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.07it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.519313 + 0.00516739
+[100]	cv_agg's auc: 0.518784 + 0.00497827
+[150]	cv_agg's auc: 0.519153 + 0.00452005
+oof AUC(var_045): 0.51901
+0 ../data/var_046/train_f001.pkl
+1 ../data/var_046/train_f002.pkl
+2 ../data/var_046/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.05it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502447 + 0.00303955
+[100]	cv_agg's auc: 0.501216 + 0.00281764
+oof AUC(var_046): 0.50054
+0 ../data/var_047/train_f001.pkl
+1 ../data/var_047/train_f002.pkl
+2 ../data/var_047/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.09it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506963 + 0.00440967
+[100]	cv_agg's auc: 0.507894 + 0.00428756
+[150]	cv_agg's auc: 0.507531 + 0.00441806
+oof AUC(var_047): 0.50726
+0 ../data/var_048/train_f001.pkl
+1 ../data/var_048/train_f002.pkl
+2 ../data/var_048/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.33it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.52973 + 0.00594343
+[100]	cv_agg's auc: 0.5284 + 0.00592485
+oof AUC(var_048): 0.52784
+0 ../data/var_049/train_f001.pkl
+1 ../data/var_049/train_f002.pkl
+2 ../data/var_049/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.44it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.525408 + 0.00306863
+[100]	cv_agg's auc: 0.52471 + 0.00269936
+oof AUC(var_049): 0.52438
+0 ../data/var_050/train_f001.pkl
+1 ../data/var_050/train_f002.pkl
+2 ../data/var_050/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.54it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.508537 + 0.00247579
+[100]	cv_agg's auc: 0.508741 + 0.00179831
+oof AUC(var_050): 0.50851
+0 ../data/var_051/train_f001.pkl
+1 ../data/var_051/train_f002.pkl
+2 ../data/var_051/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.31it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.52386 + 0.00170708
+[100]	cv_agg's auc: 0.523395 + 0.00167335
+[150]	cv_agg's auc: 0.523404 + 0.00170657
+oof AUC(var_051): 0.52319
+0 ../data/var_052/train_f001.pkl
+1 ../data/var_052/train_f002.pkl
+2 ../data/var_052/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.57it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.520545 + 0.00399461
+[100]	cv_agg's auc: 0.52003 + 0.00440305
+oof AUC(var_052): 0.51989
+0 ../data/var_053/train_f001.pkl
+1 ../data/var_053/train_f002.pkl
+2 ../data/var_053/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.28it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.553168 + 0.00563089
+[100]	cv_agg's auc: 0.552959 + 0.00566547
+[150]	cv_agg's auc: 0.552474 + 0.00554188
+oof AUC(var_053): 0.5523
+0 ../data/var_054/train_f001.pkl
+1 ../data/var_054/train_f002.pkl
+2 ../data/var_054/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.50it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.511946 + 0.00293182
+[100]	cv_agg's auc: 0.512652 + 0.00234766
+oof AUC(var_054): 0.51223
+0 ../data/var_055/train_f001.pkl
+1 ../data/var_055/train_f002.pkl
+2 ../data/var_055/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.10it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.507302 + 0.00437821
+[100]	cv_agg's auc: 0.50789 + 0.00483602
+[150]	cv_agg's auc: 0.507142 + 0.00561213
+[200]	cv_agg's auc: 0.506946 + 0.00538566
+oof AUC(var_055): 0.50691
+0 ../data/var_056/train_f001.pkl
+1 ../data/var_056/train_f002.pkl
+2 ../data/var_056/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.65it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523007 + 0.00538181
+[100]	cv_agg's auc: 0.523056 + 0.00528647
+oof AUC(var_056): 0.5227
+0 ../data/var_057/train_f001.pkl
+1 ../data/var_057/train_f002.pkl
+2 ../data/var_057/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.28it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.505002 + 0.00388289
+[100]	cv_agg's auc: 0.504854 + 0.00348811
+oof AUC(var_057): 0.50462
+0 ../data/var_058/train_f001.pkl
+1 ../data/var_058/train_f002.pkl
+2 ../data/var_058/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.26it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.520643 + 0.0056184
+[100]	cv_agg's auc: 0.519954 + 0.00507761
+oof AUC(var_058): 0.51955
+0 ../data/var_059/train_f001.pkl
+1 ../data/var_059/train_f002.pkl
+2 ../data/var_059/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.69it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.503346 + 0.00253942
+[100]	cv_agg's auc: 0.50291 + 0.00166884
+oof AUC(var_059): 0.50302
+0 ../data/var_060/train_f001.pkl
+1 ../data/var_060/train_f002.pkl
+2 ../data/var_060/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.12it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.505774 + 0.00561675
+[100]	cv_agg's auc: 0.50497 + 0.00563492
+oof AUC(var_060): 0.50493
+0 ../data/var_061/train_f001.pkl
+1 ../data/var_061/train_f002.pkl
+2 ../data/var_061/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.77it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.501413 + 0.00232878
+[100]	cv_agg's auc: 0.501373 + 0.00250292
+oof AUC(var_061): 0.50133
+0 ../data/var_062/train_f001.pkl
+1 ../data/var_062/train_f002.pkl
+2 ../data/var_062/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.46it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.507187 + 0.00331281
+[100]	cv_agg's auc: 0.507281 + 0.00416255
+oof AUC(var_062): 0.50733
+0 ../data/var_063/train_f001.pkl
+1 ../data/var_063/train_f002.pkl
+2 ../data/var_063/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.53it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.510434 + 0.00169111
+[100]	cv_agg's auc: 0.51163 + 0.00127389
+[150]	cv_agg's auc: 0.511532 + 0.00158359
+oof AUC(var_063): 0.51128
+0 ../data/var_064/train_f001.pkl
+1 ../data/var_064/train_f002.pkl
+2 ../data/var_064/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.73it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506458 + 0.00381047
+[100]	cv_agg's auc: 0.505422 + 0.00464234
+[150]	cv_agg's auc: 0.505461 + 0.00453292
+oof AUC(var_064): 0.50555
+0 ../data/var_065/train_f001.pkl
+1 ../data/var_065/train_f002.pkl
+2 ../data/var_065/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.53it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.507181 + 0.00279847
+[100]	cv_agg's auc: 0.506525 + 0.00243872
+oof AUC(var_065): 0.50662
+0 ../data/var_066/train_f001.pkl
+1 ../data/var_066/train_f002.pkl
+2 ../data/var_066/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.36it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.514893 + 0.00331542
+[100]	cv_agg's auc: 0.514162 + 0.00349271
+oof AUC(var_066): 0.51373
+0 ../data/var_067/train_f001.pkl
+1 ../data/var_067/train_f002.pkl
+2 ../data/var_067/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.23it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.539964 + 0.00590674
+[100]	cv_agg's auc: 0.539332 + 0.00626363
+oof AUC(var_067): 0.53882
+0 ../data/var_068/train_f001.pkl
+1 ../data/var_068/train_f002.pkl
+2 ../data/var_068/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.41it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.505483 + 0.00577738
+[100]	cv_agg's auc: 0.50534 + 0.00561848
+oof AUC(var_068): 0.50504
+0 ../data/var_069/train_f001.pkl
+1 ../data/var_069/train_f002.pkl
+2 ../data/var_069/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.25it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.508284 + 0.00248144
+[100]	cv_agg's auc: 0.508495 + 0.0033124
+oof AUC(var_069): 0.50833
+0 ../data/var_070/train_f001.pkl
+1 ../data/var_070/train_f002.pkl
+2 ../data/var_070/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.34it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523979 + 0.00227463
+[100]	cv_agg's auc: 0.523724 + 0.00134273
+oof AUC(var_070): 0.52393
+0 ../data/var_071/train_f001.pkl
+1 ../data/var_071/train_f002.pkl
+2 ../data/var_071/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.67it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.52523 + 0.00273349
+[100]	cv_agg's auc: 0.52409 + 0.00188312
+oof AUC(var_071): 0.52363
+0 ../data/var_072/train_f001.pkl
+1 ../data/var_072/train_f002.pkl
+2 ../data/var_072/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.58it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.508604 + 0.00280949
+[100]	cv_agg's auc: 0.509157 + 0.002724
+oof AUC(var_072): 0.50874
+0 ../data/var_073/train_f001.pkl
+1 ../data/var_073/train_f002.pkl
+2 ../data/var_073/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.30it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.504002 + 0.00148836
+[100]	cv_agg's auc: 0.503817 + 0.00219092
+oof AUC(var_073): 0.5036
+0 ../data/var_074/train_f001.pkl
+1 ../data/var_074/train_f002.pkl
+2 ../data/var_074/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.46it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.519107 + 0.00506842
+[100]	cv_agg's auc: 0.519131 + 0.00434427
+oof AUC(var_074): 0.51883
+0 ../data/var_075/train_f001.pkl
+1 ../data/var_075/train_f002.pkl
+2 ../data/var_075/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.43it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.531653 + 0.00691253
+[100]	cv_agg's auc: 0.531008 + 0.00718802
+oof AUC(var_075): 0.5302
+0 ../data/var_076/train_f001.pkl
+1 ../data/var_076/train_f002.pkl
+2 ../data/var_076/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.18it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.55744 + 0.0016662
+[100]	cv_agg's auc: 0.557996 + 0.000690915
+[150]	cv_agg's auc: 0.557179 + 0.000714484
+oof AUC(var_076): 0.55691
+0 ../data/var_077/train_f001.pkl
+1 ../data/var_077/train_f002.pkl
+2 ../data/var_077/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.90it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.509863 + 0.0055346
+[100]	cv_agg's auc: 0.510558 + 0.00550811
+[150]	cv_agg's auc: 0.509915 + 0.00496671
+oof AUC(var_077): 0.50927
+0 ../data/var_078/train_f001.pkl
+1 ../data/var_078/train_f002.pkl
+2 ../data/var_078/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.36it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.539199 + 0.00535007
+[100]	cv_agg's auc: 0.538551 + 0.00602839
+oof AUC(var_078): 0.538
+0 ../data/var_079/train_f001.pkl
+1 ../data/var_079/train_f002.pkl
+2 ../data/var_079/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.90it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.503803 + 0.00142895
+[100]	cv_agg's auc: 0.503921 + 0.00238049
+oof AUC(var_079): 0.50374
+0 ../data/var_080/train_f001.pkl
+1 ../data/var_080/train_f002.pkl
+2 ../data/var_080/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.61it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.556274 + 0.00411088
+[100]	cv_agg's auc: 0.556688 + 0.00457922
+[150]	cv_agg's auc: 0.556539 + 0.00424966
+oof AUC(var_080): 0.55615
+0 ../data/var_081/train_f001.pkl
+1 ../data/var_081/train_f002.pkl
+2 ../data/var_081/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.95it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.570541 + 0.0030789
+[100]	cv_agg's auc: 0.570441 + 0.00358616
+oof AUC(var_081): 0.57012
+0 ../data/var_082/train_f001.pkl
+1 ../data/var_082/train_f002.pkl
+2 ../data/var_082/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.46it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513772 + 0.00274286
+[100]	cv_agg's auc: 0.514073 + 0.00387
+oof AUC(var_082): 0.51391
+0 ../data/var_083/train_f001.pkl
+1 ../data/var_083/train_f002.pkl
+2 ../data/var_083/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.69it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.516551 + 0.00483003
+[100]	cv_agg's auc: 0.516321 + 0.00318092
+[150]	cv_agg's auc: 0.516529 + 0.0030742
+[200]	cv_agg's auc: 0.516442 + 0.00295858
+[250]	cv_agg's auc: 0.516552 + 0.00258685
+oof AUC(var_083): 0.51645
+0 ../data/var_084/train_f001.pkl
+1 ../data/var_084/train_f002.pkl
+2 ../data/var_084/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.10it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506424 + 0.00594044
+[100]	cv_agg's auc: 0.505986 + 0.00599179
+oof AUC(var_084): 0.50566
+0 ../data/var_085/train_f001.pkl
+1 ../data/var_085/train_f002.pkl
+2 ../data/var_085/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.40it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.517122 + 0.00569284
+[100]	cv_agg's auc: 0.517002 + 0.00461246
+oof AUC(var_085): 0.51649
+0 ../data/var_086/train_f001.pkl
+1 ../data/var_086/train_f002.pkl
+2 ../data/var_086/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.87it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.534228 + 0.00279128
+[100]	cv_agg's auc: 0.534287 + 0.00296239
+oof AUC(var_086): 0.53378
+0 ../data/var_087/train_f001.pkl
+1 ../data/var_087/train_f002.pkl
+2 ../data/var_087/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.81it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.532867 + 0.00275533
+[100]	cv_agg's auc: 0.532341 + 0.00248443
+oof AUC(var_087): 0.53169
+0 ../data/var_088/train_f001.pkl
+1 ../data/var_088/train_f002.pkl
+2 ../data/var_088/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.92it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.517705 + 0.00357845
+[100]	cv_agg's auc: 0.517007 + 0.00274535
+[150]	cv_agg's auc: 0.516835 + 0.00269649
+oof AUC(var_088): 0.51681
+0 ../data/var_089/train_f001.pkl
+1 ../data/var_089/train_f002.pkl
+2 ../data/var_089/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.58it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.529745 + 0.00302781
+[100]	cv_agg's auc: 0.529802 + 0.00269054
+[150]	cv_agg's auc: 0.529053 + 0.00302749
+oof AUC(var_089): 0.52852
+0 ../data/var_090/train_f001.pkl
+1 ../data/var_090/train_f002.pkl
+2 ../data/var_090/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.87it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.521912 + 0.00181489
+[100]	cv_agg's auc: 0.522138 + 0.00213164
+oof AUC(var_090): 0.52135
+0 ../data/var_091/train_f001.pkl
+1 ../data/var_091/train_f002.pkl
+2 ../data/var_091/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.07it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.530238 + 0.00639505
+[100]	cv_agg's auc: 0.530556 + 0.00623625
+oof AUC(var_091): 0.53011
+0 ../data/var_092/train_f001.pkl
+1 ../data/var_092/train_f002.pkl
+2 ../data/var_092/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.07it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.537824 + 0.00633634
+[100]	cv_agg's auc: 0.537455 + 0.00620883
+oof AUC(var_092): 0.53698
+0 ../data/var_093/train_f001.pkl
+1 ../data/var_093/train_f002.pkl
+2 ../data/var_093/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.88it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.527076 + 0.0058286
+[100]	cv_agg's auc: 0.527232 + 0.00552971
+[150]	cv_agg's auc: 0.527114 + 0.00573139
+oof AUC(var_093): 0.52662
+0 ../data/var_094/train_f001.pkl
+1 ../data/var_094/train_f002.pkl
+2 ../data/var_094/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.53it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.538884 + 0.00339194
+[100]	cv_agg's auc: 0.53942 + 0.00364014
+[150]	cv_agg's auc: 0.538881 + 0.00383939
+[200]	cv_agg's auc: 0.538333 + 0.00359779
+oof AUC(var_094): 0.53819
+0 ../data/var_095/train_f001.pkl
+1 ../data/var_095/train_f002.pkl
+2 ../data/var_095/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.25it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.531526 + 0.00475316
+[100]	cv_agg's auc: 0.530432 + 0.00390782
+oof AUC(var_095): 0.53015
+0 ../data/var_096/train_f001.pkl
+1 ../data/var_096/train_f002.pkl
+2 ../data/var_096/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.70it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.500014 + 0.00352013
+[100]	cv_agg's auc: 0.499911 + 0.00287523
+oof AUC(var_096): 0.50022
+0 ../data/var_097/train_f001.pkl
+1 ../data/var_097/train_f002.pkl
+2 ../data/var_097/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.52it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.512143 + 0.00140498
+[100]	cv_agg's auc: 0.511569 + 0.00163796
+[150]	cv_agg's auc: 0.511669 + 0.00193011
+oof AUC(var_097): 0.51154
+0 ../data/var_098/train_f001.pkl
+1 ../data/var_098/train_f002.pkl
+2 ../data/var_098/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.23it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502256 + 0.00349742
+[100]	cv_agg's auc: 0.50328 + 0.00327563
+oof AUC(var_098): 0.50303
+0 ../data/var_099/train_f001.pkl
+1 ../data/var_099/train_f002.pkl
+2 ../data/var_099/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.21it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.549534 + 0.00549619
+[100]	cv_agg's auc: 0.548323 + 0.00509397
+oof AUC(var_099): 0.54795
+0 ../data/var_100/train_f001.pkl
+1 ../data/var_100/train_f002.pkl
+2 ../data/var_100/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.41it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.49596 + 0.00186703
+[100]	cv_agg's auc: 0.496034 + 0.00253134
+oof AUC(var_100): 0.49601
+0 ../data/var_101/train_f001.pkl
+1 ../data/var_101/train_f002.pkl
+2 ../data/var_101/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.53it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.508501 + 0.00600999
+[100]	cv_agg's auc: 0.507699 + 0.00565915
+oof AUC(var_101): 0.50752
+0 ../data/var_102/train_f001.pkl
+1 ../data/var_102/train_f002.pkl
+2 ../data/var_102/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.79it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.512524 + 0.00372089
+[100]	cv_agg's auc: 0.512781 + 0.00438085
+oof AUC(var_102): 0.51264
+0 ../data/var_103/train_f001.pkl
+1 ../data/var_103/train_f002.pkl
+2 ../data/var_103/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.12it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502484 + 0.00427651
+[100]	cv_agg's auc: 0.501681 + 0.0029557
+oof AUC(var_103): 0.50167
+0 ../data/var_104/train_f001.pkl
+1 ../data/var_104/train_f002.pkl
+2 ../data/var_104/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.32it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.518516 + 0.00336465
+[100]	cv_agg's auc: 0.518848 + 0.00374108
+[150]	cv_agg's auc: 0.518721 + 0.00365916
+oof AUC(var_104): 0.51819
+0 ../data/var_105/train_f001.pkl
+1 ../data/var_105/train_f002.pkl
+2 ../data/var_105/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.70it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.519246 + 0.00460018
+[100]	cv_agg's auc: 0.517681 + 0.00432599
+oof AUC(var_105): 0.51757
+0 ../data/var_106/train_f001.pkl
+1 ../data/var_106/train_f002.pkl
+2 ../data/var_106/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.89it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.522788 + 0.00265905
+[100]	cv_agg's auc: 0.523351 + 0.00267254
+[150]	cv_agg's auc: 0.523107 + 0.00250589
+oof AUC(var_106): 0.52297
+0 ../data/var_107/train_f001.pkl
+1 ../data/var_107/train_f002.pkl
+2 ../data/var_107/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.12it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.536955 + 0.00583962
+[100]	cv_agg's auc: 0.536764 + 0.00520579
+oof AUC(var_107): 0.53604
+0 ../data/var_108/train_f001.pkl
+1 ../data/var_108/train_f002.pkl
+2 ../data/var_108/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.31it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.544315 + 0.00241123
+[100]	cv_agg's auc: 0.543791 + 0.00231577
+oof AUC(var_108): 0.5434
+0 ../data/var_109/train_f001.pkl
+1 ../data/var_109/train_f002.pkl
+2 ../data/var_109/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.83it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.538761 + 0.00474921
+[100]	cv_agg's auc: 0.538216 + 0.00564101
+oof AUC(var_109): 0.53805
+0 ../data/var_110/train_f001.pkl
+1 ../data/var_110/train_f002.pkl
+2 ../data/var_110/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.03it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.555357 + 0.00271276
+[100]	cv_agg's auc: 0.555505 + 0.00281363
+[150]	cv_agg's auc: 0.555345 + 0.00297139
+oof AUC(var_110): 0.55499
+0 ../data/var_111/train_f001.pkl
+1 ../data/var_111/train_f002.pkl
+2 ../data/var_111/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.15it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.517271 + 0.00275003
+[100]	cv_agg's auc: 0.517062 + 0.00253427
+oof AUC(var_111): 0.51648
+0 ../data/var_112/train_f001.pkl
+1 ../data/var_112/train_f002.pkl
+2 ../data/var_112/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.44it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523839 + 0.00153652
+[100]	cv_agg's auc: 0.522753 + 0.00231106
+oof AUC(var_112): 0.52238
+0 ../data/var_113/train_f001.pkl
+1 ../data/var_113/train_f002.pkl
+2 ../data/var_113/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.99it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.508216 + 0.00223012
+[100]	cv_agg's auc: 0.507825 + 0.00205161
+oof AUC(var_113): 0.50786
+0 ../data/var_114/train_f001.pkl
+1 ../data/var_114/train_f002.pkl
+2 ../data/var_114/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.76it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.515854 + 0.00319512
+[100]	cv_agg's auc: 0.516344 + 0.00296578
+[150]	cv_agg's auc: 0.515887 + 0.00313853
+[200]	cv_agg's auc: 0.515207 + 0.00323085
+oof AUC(var_114): 0.51509
+0 ../data/var_115/train_f001.pkl
+1 ../data/var_115/train_f002.pkl
+2 ../data/var_115/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.40it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.54259 + 0.00365655
+[100]	cv_agg's auc: 0.542584 + 0.00307063
+oof AUC(var_115): 0.54181
+0 ../data/var_116/train_f001.pkl
+1 ../data/var_116/train_f002.pkl
+2 ../data/var_116/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.06it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.518028 + 0.00227973
+[100]	cv_agg's auc: 0.518795 + 0.00361466
+oof AUC(var_116): 0.51835
+0 ../data/var_117/train_f001.pkl
+1 ../data/var_117/train_f002.pkl
+2 ../data/var_117/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.93it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502079 + 0.00263166
+[100]	cv_agg's auc: 0.502398 + 0.00214534
+oof AUC(var_117): 0.50197
+0 ../data/var_118/train_f001.pkl
+1 ../data/var_118/train_f002.pkl
+2 ../data/var_118/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.39it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.540128 + 0.00480751
+[100]	cv_agg's auc: 0.540357 + 0.00519182
+[150]	cv_agg's auc: 0.540051 + 0.00511357
+[200]	cv_agg's auc: 0.539744 + 0.00476753
+oof AUC(var_118): 0.53951
+0 ../data/var_119/train_f001.pkl
+1 ../data/var_119/train_f002.pkl
+2 ../data/var_119/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.27it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.5245 + 0.00263369
+[100]	cv_agg's auc: 0.5232 + 0.00328168
+oof AUC(var_119): 0.52283
+0 ../data/var_120/train_f001.pkl
+1 ../data/var_120/train_f002.pkl
+2 ../data/var_120/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.50it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.507713 + 0.00453321
+[100]	cv_agg's auc: 0.508548 + 0.00449253
+oof AUC(var_120): 0.50785
+0 ../data/var_121/train_f001.pkl
+1 ../data/var_121/train_f002.pkl
+2 ../data/var_121/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.58it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.533889 + 0.003603
+[100]	cv_agg's auc: 0.533417 + 0.0027474
+[150]	cv_agg's auc: 0.533099 + 0.0025729
+oof AUC(var_121): 0.533
+0 ../data/var_122/train_f001.pkl
+1 ../data/var_122/train_f002.pkl
+2 ../data/var_122/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.26it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.532447 + 0.00421329
+[100]	cv_agg's auc: 0.53167 + 0.00394792
+oof AUC(var_122): 0.53138
+0 ../data/var_123/train_f001.pkl
+1 ../data/var_123/train_f002.pkl
+2 ../data/var_123/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.38it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.540466 + 0.00632849
+[100]	cv_agg's auc: 0.540286 + 0.00654933
+[150]	cv_agg's auc: 0.539941 + 0.0065771
+oof AUC(var_123): 0.53895
+0 ../data/var_124/train_f001.pkl
+1 ../data/var_124/train_f002.pkl
+2 ../data/var_124/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.01it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502243 + 0.00364395
+[100]	cv_agg's auc: 0.502147 + 0.0050876
+oof AUC(var_124): 0.50194
+0 ../data/var_125/train_f001.pkl
+1 ../data/var_125/train_f002.pkl
+2 ../data/var_125/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.29it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.515312 + 0.00274836
+[100]	cv_agg's auc: 0.514694 + 0.0025302
+oof AUC(var_125): 0.51514
+0 ../data/var_126/train_f001.pkl
+1 ../data/var_126/train_f002.pkl
+2 ../data/var_126/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.41it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.501895 + 0.00231267
+[100]	cv_agg's auc: 0.50205 + 0.00225327
+oof AUC(var_126): 0.50199
+0 ../data/var_127/train_f001.pkl
+1 ../data/var_127/train_f002.pkl
+2 ../data/var_127/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.21it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.533809 + 0.00502048
+[100]	cv_agg's auc: 0.533555 + 0.00474844
+[150]	cv_agg's auc: 0.533485 + 0.00477536
+oof AUC(var_127): 0.53291
+0 ../data/var_128/train_f001.pkl
+1 ../data/var_128/train_f002.pkl
+2 ../data/var_128/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.47it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.515373 + 0.00239077
+[100]	cv_agg's auc: 0.515078 + 0.00261161
+oof AUC(var_128): 0.51502
+0 ../data/var_129/train_f001.pkl
+1 ../data/var_129/train_f002.pkl
+2 ../data/var_129/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.96it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.501483 + 0.00246565
+[100]	cv_agg's auc: 0.502002 + 0.00138037
+oof AUC(var_129): 0.50193
+0 ../data/var_130/train_f001.pkl
+1 ../data/var_130/train_f002.pkl
+2 ../data/var_130/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.64it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.521612 + 0.00312122
+[100]	cv_agg's auc: 0.520249 + 0.00389996
+oof AUC(var_130): 0.51993
+0 ../data/var_131/train_f001.pkl
+1 ../data/var_131/train_f002.pkl
+2 ../data/var_131/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.99it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.526154 + 0.00242132
+[100]	cv_agg's auc: 0.525716 + 0.00290525
+oof AUC(var_131): 0.52514
+0 ../data/var_132/train_f001.pkl
+1 ../data/var_132/train_f002.pkl
+2 ../data/var_132/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.18it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.518193 + 0.00129795
+[100]	cv_agg's auc: 0.517999 + 0.000949511
+[150]	cv_agg's auc: 0.517696 + 0.00135543
+oof AUC(var_132): 0.51669
+0 ../data/var_133/train_f001.pkl
+1 ../data/var_133/train_f002.pkl
+2 ../data/var_133/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.55it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.542763 + 0.00263611
+[100]	cv_agg's auc: 0.542253 + 0.00295876
+oof AUC(var_133): 0.54217
+0 ../data/var_134/train_f001.pkl
+1 ../data/var_134/train_f002.pkl
+2 ../data/var_134/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.39it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.507397 + 0.00209956
+[100]	cv_agg's auc: 0.508277 + 0.00211658
+oof AUC(var_134): 0.5082
+0 ../data/var_135/train_f001.pkl
+1 ../data/var_135/train_f002.pkl
+2 ../data/var_135/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 13.87it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.518118 + 0.00109504
+[100]	cv_agg's auc: 0.517731 + 0.00102799
+[150]	cv_agg's auc: 0.516396 + 0.00124436
+oof AUC(var_135): 0.51614
+0 ../data/var_136/train_f001.pkl
+1 ../data/var_136/train_f002.pkl
+2 ../data/var_136/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.90it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.497025 + 0.00211077
+[100]	cv_agg's auc: 0.497777 + 0.00163084
+oof AUC(var_136): 0.49794
+0 ../data/var_137/train_f001.pkl
+1 ../data/var_137/train_f002.pkl
+2 ../data/var_137/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.82it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.521124 + 0.00278192
+[100]	cv_agg's auc: 0.521815 + 0.00350626
+[150]	cv_agg's auc: 0.520615 + 0.00287745
+oof AUC(var_137): 0.5199
+0 ../data/var_138/train_f001.pkl
+1 ../data/var_138/train_f002.pkl
+2 ../data/var_138/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.03it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513157 + 0.00399827
+[100]	cv_agg's auc: 0.512791 + 0.00350022
+[150]	cv_agg's auc: 0.512373 + 0.00328154
+oof AUC(var_138): 0.51229
+0 ../data/var_139/train_f001.pkl
+1 ../data/var_139/train_f002.pkl
+2 ../data/var_139/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.61it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.570641 + 0.00529571
+[100]	cv_agg's auc: 0.570599 + 0.00498413
+[150]	cv_agg's auc: 0.570452 + 0.00462381
+oof AUC(var_139): 0.57034
+0 ../data/var_140/train_f001.pkl
+1 ../data/var_140/train_f002.pkl
+2 ../data/var_140/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.13it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506137 + 0.00407723
+[100]	cv_agg's auc: 0.506632 + 0.00323417
+oof AUC(var_140): 0.5063
+0 ../data/var_141/train_f001.pkl
+1 ../data/var_141/train_f002.pkl
+2 ../data/var_141/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.09it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523702 + 0.00379411
+[100]	cv_agg's auc: 0.523717 + 0.00392171
+oof AUC(var_141): 0.52319
+0 ../data/var_142/train_f001.pkl
+1 ../data/var_142/train_f002.pkl
+2 ../data/var_142/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.40it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513641 + 0.00305544
+[100]	cv_agg's auc: 0.513656 + 0.00260266
+oof AUC(var_142): 0.51369
+0 ../data/var_143/train_f001.pkl
+1 ../data/var_143/train_f002.pkl
+2 ../data/var_143/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.98it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.503848 + 0.00291514
+[100]	cv_agg's auc: 0.504023 + 0.00260504
+oof AUC(var_143): 0.50398
+0 ../data/var_144/train_f001.pkl
+1 ../data/var_144/train_f002.pkl
+2 ../data/var_144/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.78it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.515138 + 0.0025238
+[100]	cv_agg's auc: 0.513752 + 0.00156092
+oof AUC(var_144): 0.5135
+0 ../data/var_145/train_f001.pkl
+1 ../data/var_145/train_f002.pkl
+2 ../data/var_145/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.78it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.522777 + 0.00786703
+[100]	cv_agg's auc: 0.522972 + 0.00737379
+oof AUC(var_145): 0.52253
+0 ../data/var_146/train_f001.pkl
+1 ../data/var_146/train_f002.pkl
+2 ../data/var_146/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.07it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.553047 + 0.00420493
+[100]	cv_agg's auc: 0.552965 + 0.00444792
+oof AUC(var_146): 0.55291
+0 ../data/var_147/train_f001.pkl
+1 ../data/var_147/train_f002.pkl
+2 ../data/var_147/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.15it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.534001 + 0.00372128
+[100]	cv_agg's auc: 0.53275 + 0.00372676
+oof AUC(var_147): 0.53269
+0 ../data/var_148/train_f001.pkl
+1 ../data/var_148/train_f002.pkl
+2 ../data/var_148/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.32it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.549113 + 0.00218915
+[100]	cv_agg's auc: 0.548432 + 0.00277714
+oof AUC(var_148): 0.54809
+0 ../data/var_149/train_f001.pkl
+1 ../data/var_149/train_f002.pkl
+2 ../data/var_149/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.93it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.546028 + 0.0055153
+[100]	cv_agg's auc: 0.546344 + 0.00500781
+[150]	cv_agg's auc: 0.546229 + 0.00539443
+oof AUC(var_149): 0.54596
+0 ../data/var_150/train_f001.pkl
+1 ../data/var_150/train_f002.pkl
+2 ../data/var_150/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.83it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.522437 + 0.00433982
+[100]	cv_agg's auc: 0.521769 + 0.00428319
+[150]	cv_agg's auc: 0.521223 + 0.0047712
+oof AUC(var_150): 0.52098
+0 ../data/var_151/train_f001.pkl
+1 ../data/var_151/train_f002.pkl
+2 ../data/var_151/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.41it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.518684 + 0.00412191
+[100]	cv_agg's auc: 0.518499 + 0.00370989
+oof AUC(var_151): 0.51885
+0 ../data/var_152/train_f001.pkl
+1 ../data/var_152/train_f002.pkl
+2 ../data/var_152/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.13it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.503849 + 0.00527508
+[100]	cv_agg's auc: 0.50399 + 0.00475339
+oof AUC(var_152): 0.5039
+0 ../data/var_153/train_f001.pkl
+1 ../data/var_153/train_f002.pkl
+2 ../data/var_153/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.66it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.50022 + 0.00546435
+[100]	cv_agg's auc: 0.500266 + 0.00567827
+oof AUC(var_153): 0.50003
+0 ../data/var_154/train_f001.pkl
+1 ../data/var_154/train_f002.pkl
+2 ../data/var_154/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 13.54it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.54302 + 0.00373475
+[100]	cv_agg's auc: 0.542384 + 0.0037176
+[150]	cv_agg's auc: 0.542103 + 0.00382397
+oof AUC(var_154): 0.5418
+0 ../data/var_155/train_f001.pkl
+1 ../data/var_155/train_f002.pkl
+2 ../data/var_155/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.65it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.527751 + 0.0074492
+[100]	cv_agg's auc: 0.527452 + 0.00757714
+oof AUC(var_155): 0.52722
+0 ../data/var_156/train_f001.pkl
+1 ../data/var_156/train_f002.pkl
+2 ../data/var_156/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.92it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.511946 + 0.00475473
+[100]	cv_agg's auc: 0.51178 + 0.00427869
+oof AUC(var_156): 0.51182
+0 ../data/var_157/train_f001.pkl
+1 ../data/var_157/train_f002.pkl
+2 ../data/var_157/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.86it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.521828 + 0.00581306
+[100]	cv_agg's auc: 0.521898 + 0.00563034
+[150]	cv_agg's auc: 0.52094 + 0.00511636
+oof AUC(var_157): 0.52058
+0 ../data/var_158/train_f001.pkl
+1 ../data/var_158/train_f002.pkl
+2 ../data/var_158/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.42it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.497375 + 0.00275724
+[100]	cv_agg's auc: 0.497352 + 0.00337111
+oof AUC(var_158): 0.49742
+0 ../data/var_159/train_f001.pkl
+1 ../data/var_159/train_f002.pkl
+2 ../data/var_159/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.58it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506532 + 0.00201933
+[100]	cv_agg's auc: 0.507088 + 0.00186513
+[150]	cv_agg's auc: 0.506949 + 0.00224479
+oof AUC(var_159): 0.50671
+0 ../data/var_160/train_f001.pkl
+1 ../data/var_160/train_f002.pkl
+2 ../data/var_160/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.34it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.504654 + 0.00241871
+[100]	cv_agg's auc: 0.504689 + 0.00248808
+oof AUC(var_160): 0.50481
+0 ../data/var_161/train_f001.pkl
+1 ../data/var_161/train_f002.pkl
+2 ../data/var_161/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.64it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.506795 + 0.00389991
+[100]	cv_agg's auc: 0.506231 + 0.00336888
+oof AUC(var_161): 0.50618
+0 ../data/var_162/train_f001.pkl
+1 ../data/var_162/train_f002.pkl
+2 ../data/var_162/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.66it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.522221 + 0.00186992
+[100]	cv_agg's auc: 0.521986 + 0.00252098
+oof AUC(var_162): 0.52194
+0 ../data/var_163/train_f001.pkl
+1 ../data/var_163/train_f002.pkl
+2 ../data/var_163/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.21it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.527645 + 0.00261443
+[100]	cv_agg's auc: 0.528074 + 0.00341067
+[150]	cv_agg's auc: 0.528036 + 0.00317677
+[200]	cv_agg's auc: 0.52764 + 0.00329939
+oof AUC(var_163): 0.52765
+0 ../data/var_164/train_f001.pkl
+1 ../data/var_164/train_f002.pkl
+2 ../data/var_164/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.04it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.535969 + 0.00379574
+[100]	cv_agg's auc: 0.535999 + 0.00294523
+[150]	cv_agg's auc: 0.535904 + 0.00310247
+oof AUC(var_164): 0.53582
+0 ../data/var_165/train_f001.pkl
+1 ../data/var_165/train_f002.pkl
+2 ../data/var_165/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.27it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.550092 + 0.00370177
+[100]	cv_agg's auc: 0.550385 + 0.00433061
+[150]	cv_agg's auc: 0.549528 + 0.00418436
+oof AUC(var_165): 0.54911
+0 ../data/var_166/train_f001.pkl
+1 ../data/var_166/train_f002.pkl
+2 ../data/var_166/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.94it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.550812 + 0.00273208
+[100]	cv_agg's auc: 0.550303 + 0.00273025
+[150]	cv_agg's auc: 0.549649 + 0.00261665
+oof AUC(var_166): 0.54939
+0 ../data/var_167/train_f001.pkl
+1 ../data/var_167/train_f002.pkl
+2 ../data/var_167/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.93it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.524276 + 0.00297141
+[100]	cv_agg's auc: 0.524377 + 0.0029008
+[150]	cv_agg's auc: 0.523625 + 0.00269617
+oof AUC(var_167): 0.52331
+0 ../data/var_168/train_f001.pkl
+1 ../data/var_168/train_f002.pkl
+2 ../data/var_168/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.19it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.509264 + 0.00195588
+[100]	cv_agg's auc: 0.508929 + 0.00150616
+oof AUC(var_168): 0.50825
+0 ../data/var_169/train_f001.pkl
+1 ../data/var_169/train_f002.pkl
+2 ../data/var_169/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.76it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.546004 + 0.00194728
+[100]	cv_agg's auc: 0.546285 + 0.0023628
+[150]	cv_agg's auc: 0.545563 + 0.00260474
+oof AUC(var_169): 0.545
+0 ../data/var_170/train_f001.pkl
+1 ../data/var_170/train_f002.pkl
+2 ../data/var_170/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.45it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.541631 + 0.00673368
+[100]	cv_agg's auc: 0.540703 + 0.00639473
+[150]	cv_agg's auc: 0.540015 + 0.00608916
+oof AUC(var_170): 0.53988
+0 ../data/var_171/train_f001.pkl
+1 ../data/var_171/train_f002.pkl
+2 ../data/var_171/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.65it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.511866 + 0.0027775
+[100]	cv_agg's auc: 0.511151 + 0.00144208
+[150]	cv_agg's auc: 0.510466 + 0.0018095
+oof AUC(var_171): 0.51033
+0 ../data/var_172/train_f001.pkl
+1 ../data/var_172/train_f002.pkl
+2 ../data/var_172/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.73it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.53687 + 0.00464503
+[100]	cv_agg's auc: 0.536962 + 0.00429955
+[150]	cv_agg's auc: 0.536827 + 0.00359374
+oof AUC(var_172): 0.53658
+0 ../data/var_173/train_f001.pkl
+1 ../data/var_173/train_f002.pkl
+2 ../data/var_173/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.94it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.531983 + 0.0035003
+[100]	cv_agg's auc: 0.531076 + 0.0036566
+oof AUC(var_173): 0.53058
+0 ../data/var_174/train_f001.pkl
+1 ../data/var_174/train_f002.pkl
+2 ../data/var_174/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.64it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.5494 + 0.00336623
+[100]	cv_agg's auc: 0.549434 + 0.00365985
+oof AUC(var_174): 0.54921
+0 ../data/var_175/train_f001.pkl
+1 ../data/var_175/train_f002.pkl
+2 ../data/var_175/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.15it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.520075 + 0.00433358
+[100]	cv_agg's auc: 0.519136 + 0.00372406
+[150]	cv_agg's auc: 0.517844 + 0.00383735
+oof AUC(var_175): 0.51754
+0 ../data/var_176/train_f001.pkl
+1 ../data/var_176/train_f002.pkl
+2 ../data/var_176/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.42it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.502658 + 0.00439116
+[100]	cv_agg's auc: 0.502624 + 0.00234131
+oof AUC(var_176): 0.50257
+0 ../data/var_177/train_f001.pkl
+1 ../data/var_177/train_f002.pkl
+2 ../data/var_177/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 12.73it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.532487 + 0.00280633
+[100]	cv_agg's auc: 0.53207 + 0.00270378
+[150]	cv_agg's auc: 0.531826 + 0.00243327
+oof AUC(var_177): 0.53182
+0 ../data/var_178/train_f001.pkl
+1 ../data/var_178/train_f002.pkl
+2 ../data/var_178/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.63it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513268 + 0.0029789
+[100]	cv_agg's auc: 0.513363 + 0.00417614
+[150]	cv_agg's auc: 0.513386 + 0.00406966
+oof AUC(var_178): 0.51326
+0 ../data/var_179/train_f001.pkl
+1 ../data/var_179/train_f002.pkl
+2 ../data/var_179/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.61it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.540491 + 0.00233247
+[100]	cv_agg's auc: 0.539507 + 0.00263689
+oof AUC(var_179): 0.53891
+0 ../data/var_180/train_f001.pkl
+1 ../data/var_180/train_f002.pkl
+2 ../data/var_180/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.13it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.522161 + 0.00372923
+[100]	cv_agg's auc: 0.522868 + 0.00352534
+[150]	cv_agg's auc: 0.522323 + 0.00327764
+[200]	cv_agg's auc: 0.522514 + 0.00259297
+oof AUC(var_180): 0.52246
+0 ../data/var_181/train_f001.pkl
+1 ../data/var_181/train_f002.pkl
+2 ../data/var_181/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.30it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.509446 + 0.00339154
+[100]	cv_agg's auc: 0.509403 + 0.0049686
+oof AUC(var_181): 0.50907
+0 ../data/var_182/train_f001.pkl
+1 ../data/var_182/train_f002.pkl
+2 ../data/var_182/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.50it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.500631 + 0.00614498
+[100]	cv_agg's auc: 0.502046 + 0.00584814
+oof AUC(var_182): 0.50148
+0 ../data/var_183/train_f001.pkl
+1 ../data/var_183/train_f002.pkl
+2 ../data/var_183/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 10.61it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.500716 + 0.00267058
+[100]	cv_agg's auc: 0.499628 + 0.00219544
+oof AUC(var_183): 0.49942
+0 ../data/var_184/train_f001.pkl
+1 ../data/var_184/train_f002.pkl
+2 ../data/var_184/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.92it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.544059 + 0.00283191
+[100]	cv_agg's auc: 0.54411 + 0.00300208
+[150]	cv_agg's auc: 0.544103 + 0.00300287
+oof AUC(var_184): 0.54339
+0 ../data/var_185/train_f001.pkl
+1 ../data/var_185/train_f002.pkl
+2 ../data/var_185/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.34it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.495913 + 0.00593463
+[100]	cv_agg's auc: 0.495734 + 0.00565438
+oof AUC(var_185): 0.49587
+0 ../data/var_186/train_f001.pkl
+1 ../data/var_186/train_f002.pkl
+2 ../data/var_186/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.33it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.524212 + 0.00197053
+[100]	cv_agg's auc: 0.523256 + 0.0018542
+oof AUC(var_186): 0.52234
+0 ../data/var_187/train_f001.pkl
+1 ../data/var_187/train_f002.pkl
+2 ../data/var_187/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.01it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.509152 + 0.00315557
+[100]	cv_agg's auc: 0.510482 + 0.00337934
+[150]	cv_agg's auc: 0.5108 + 0.00324111
+[200]	cv_agg's auc: 0.510815 + 0.00285492
+oof AUC(var_187): 0.51049
+0 ../data/var_188/train_f001.pkl
+1 ../data/var_188/train_f002.pkl
+2 ../data/var_188/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.81it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.525359 + 0.00680749
+[100]	cv_agg's auc: 0.525155 + 0.00699544
+[150]	cv_agg's auc: 0.525452 + 0.00693924
+[200]	cv_agg's auc: 0.525294 + 0.00720002
+oof AUC(var_188): 0.52479
+0 ../data/var_189/train_f001.pkl
+1 ../data/var_189/train_f002.pkl
+2 ../data/var_189/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.26it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.504689 + 0.00170457
+[100]	cv_agg's auc: 0.503137 + 0.00145626
+oof AUC(var_189): 0.50323
+0 ../data/var_190/train_f001.pkl
+1 ../data/var_190/train_f002.pkl
+2 ../data/var_190/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.92it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.548454 + 0.00589065
+[100]	cv_agg's auc: 0.549124 + 0.00701872
+[150]	cv_agg's auc: 0.548957 + 0.00632426
+oof AUC(var_190): 0.54845
+0 ../data/var_191/train_f001.pkl
+1 ../data/var_191/train_f002.pkl
+2 ../data/var_191/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.12it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.542262 + 0.00793296
+[100]	cv_agg's auc: 0.542525 + 0.00747473
+[150]	cv_agg's auc: 0.542257 + 0.007012
+[200]	cv_agg's auc: 0.541876 + 0.00665051
+oof AUC(var_191): 0.54126
+0 ../data/var_192/train_f001.pkl
+1 ../data/var_192/train_f002.pkl
+2 ../data/var_192/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  5.61it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.540575 + 0.0030477
+[100]	cv_agg's auc: 0.540291 + 0.00340832
+oof AUC(var_192): 0.53954
+0 ../data/var_193/train_f001.pkl
+1 ../data/var_193/train_f002.pkl
+2 ../data/var_193/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.35it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.509361 + 0.00290752
+[100]	cv_agg's auc: 0.510057 + 0.00281379
+oof AUC(var_193): 0.51016
+0 ../data/var_194/train_f001.pkl
+1 ../data/var_194/train_f002.pkl
+2 ../data/var_194/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  7.37it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513771 + 0.00647062
+[100]	cv_agg's auc: 0.513915 + 0.00631827
+oof AUC(var_194): 0.51316
+0 ../data/var_195/train_f001.pkl
+1 ../data/var_195/train_f002.pkl
+2 ../data/var_195/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.10it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.523127 + 0.00287934
+[100]	cv_agg's auc: 0.52253 + 0.00296073
+oof AUC(var_195): 0.52197
+0 ../data/var_196/train_f001.pkl
+1 ../data/var_196/train_f002.pkl
+2 ../data/var_196/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  6.40it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.513537 + 0.00509522
+[100]	cv_agg's auc: 0.512719 + 0.00439021
+oof AUC(var_196): 0.51259
+0 ../data/var_197/train_f001.pkl
+1 ../data/var_197/train_f002.pkl
+2 ../data/var_197/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 11.62it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.525068 + 0.00267582
+[100]	cv_agg's auc: 0.524734 + 0.00319541
+oof AUC(var_197): 0.5242
+0 ../data/var_198/train_f001.pkl
+1 ../data/var_198/train_f002.pkl
+2 ../data/var_198/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  8.15it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.543671 + 0.00620684
+[100]	cv_agg's auc: 0.543161 + 0.00694701
+[150]	cv_agg's auc: 0.542596 + 0.0068202
+oof AUC(var_198): 0.5423
+0 ../data/var_199/train_f001.pkl
+1 ../data/var_199/train_f002.pkl
+2 ../data/var_199/train_f004.pkl
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00,  9.20it/s]
+no dup :) 
+X_train.shape (200000, 11)
+[50]	cv_agg's auc: 0.519117 + 0.00281037
+[100]	cv_agg's auc: 0.521492 + 0.00183756
+[150]	cv_agg's auc: 0.520879 + 0.00199483
+oof AUC(var_199): 0.5212
+
+#==============================================================================
+# SUCCESS !!! 804_cv_eachVar.py
+#==============================================================================
+
+time: 37.25min
+instance-1  FINISH 804_cv_eachVar.py  time: 37.25min

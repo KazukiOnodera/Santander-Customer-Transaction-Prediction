@@ -1,270 +1,923 @@
 
 #==============================================================================
-# START!!! 801_cv.py    PID: 4658    time: 2019-04-01 13:38:17.839154
+# START!!! 801_cv.py    PID: 2988    time: 2019-04-04 15:16:34.691621
 #==============================================================================
 
 instance-1  START 801_cv.py  time: 0.00min
-SEED: 4224
-0 ../data/train_f001.pkl
-1 ../data/train_f003.pkl
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:10<00:00,  5.21s/it]
+SEED: 2536
+0 ../data/var_000/train_f001.pkl
+1 ../data/var_000/train_f002.pkl
+2 ../data/var_000/train_f004.pkl
+3 ../data/var_001/train_f001.pkl
+4 ../data/var_001/train_f002.pkl
+5 ../data/var_001/train_f004.pkl
+6 ../data/var_002/train_f001.pkl
+7 ../data/var_002/train_f002.pkl
+8 ../data/var_002/train_f004.pkl
+9 ../data/var_003/train_f001.pkl
+10 ../data/var_003/train_f002.pkl
+11 ../data/var_003/train_f004.pkl
+12 ../data/var_004/train_f001.pkl
+13 ../data/var_004/train_f002.pkl
+14 ../data/var_004/train_f004.pkl
+15 ../data/var_005/train_f001.pkl
+16 ../data/var_005/train_f002.pkl
+17 ../data/var_005/train_f004.pkl
+18 ../data/var_006/train_f001.pkl
+19 ../data/var_006/train_f002.pkl
+20 ../data/var_006/train_f004.pkl
+21 ../data/var_007/train_f001.pkl
+22 ../data/var_007/train_f002.pkl
+23 ../data/var_007/train_f004.pkl
+24 ../data/var_008/train_f001.pkl
+25 ../data/var_008/train_f002.pkl
+26 ../data/var_008/train_f004.pkl
+27 ../data/var_009/train_f001.pkl
+28 ../data/var_009/train_f002.pkl
+29 ../data/var_009/train_f004.pkl
+30 ../data/var_010/train_f001.pkl
+31 ../data/var_010/train_f002.pkl
+32 ../data/var_010/train_f004.pkl
+33 ../data/var_011/train_f001.pkl
+34 ../data/var_011/train_f002.pkl
+35 ../data/var_011/train_f004.pkl
+36 ../data/var_012/train_f001.pkl
+37 ../data/var_012/train_f002.pkl
+38 ../data/var_012/train_f004.pkl
+39 ../data/var_013/train_f001.pkl
+40 ../data/var_013/train_f002.pkl
+41 ../data/var_013/train_f004.pkl
+42 ../data/var_014/train_f001.pkl
+43 ../data/var_014/train_f002.pkl
+44 ../data/var_014/train_f004.pkl
+45 ../data/var_015/train_f001.pkl
+46 ../data/var_015/train_f002.pkl
+47 ../data/var_015/train_f004.pkl
+48 ../data/var_016/train_f001.pkl
+49 ../data/var_016/train_f002.pkl
+50 ../data/var_016/train_f004.pkl
+51 ../data/var_017/train_f001.pkl
+52 ../data/var_017/train_f002.pkl
+53 ../data/var_017/train_f004.pkl
+54 ../data/var_018/train_f001.pkl
+55 ../data/var_018/train_f002.pkl
+56 ../data/var_018/train_f004.pkl
+57 ../data/var_019/train_f001.pkl
+58 ../data/var_019/train_f002.pkl
+59 ../data/var_019/train_f004.pkl
+60 ../data/var_020/train_f001.pkl
+61 ../data/var_020/train_f002.pkl
+62 ../data/var_020/train_f004.pkl
+63 ../data/var_021/train_f001.pkl
+64 ../data/var_021/train_f002.pkl
+65 ../data/var_021/train_f004.pkl
+66 ../data/var_022/train_f001.pkl
+67 ../data/var_022/train_f002.pkl
+68 ../data/var_022/train_f004.pkl
+69 ../data/var_023/train_f001.pkl
+70 ../data/var_023/train_f002.pkl
+71 ../data/var_023/train_f004.pkl
+72 ../data/var_024/train_f001.pkl
+73 ../data/var_024/train_f002.pkl
+74 ../data/var_024/train_f004.pkl
+75 ../data/var_025/train_f001.pkl
+76 ../data/var_025/train_f002.pkl
+77 ../data/var_025/train_f004.pkl
+78 ../data/var_026/train_f001.pkl
+79 ../data/var_026/train_f002.pkl
+80 ../data/var_026/train_f004.pkl
+81 ../data/var_027/train_f001.pkl
+82 ../data/var_027/train_f002.pkl
+83 ../data/var_027/train_f004.pkl
+84 ../data/var_028/train_f001.pkl
+85 ../data/var_028/train_f002.pkl
+86 ../data/var_028/train_f004.pkl
+87 ../data/var_029/train_f001.pkl
+88 ../data/var_029/train_f002.pkl
+89 ../data/var_029/train_f004.pkl
+90 ../data/var_030/train_f001.pkl
+91 ../data/var_030/train_f002.pkl
+92 ../data/var_030/train_f004.pkl
+93 ../data/var_031/train_f001.pkl
+94 ../data/var_031/train_f002.pkl
+95 ../data/var_031/train_f004.pkl
+96 ../data/var_032/train_f001.pkl
+97 ../data/var_032/train_f002.pkl
+98 ../data/var_032/train_f004.pkl
+99 ../data/var_033/train_f001.pkl
+100 ../data/var_033/train_f002.pkl
+101 ../data/var_033/train_f004.pkl
+102 ../data/var_034/train_f001.pkl
+103 ../data/var_034/train_f002.pkl
+104 ../data/var_034/train_f004.pkl
+105 ../data/var_035/train_f001.pkl
+106 ../data/var_035/train_f002.pkl
+107 ../data/var_035/train_f004.pkl
+108 ../data/var_036/train_f001.pkl
+109 ../data/var_036/train_f002.pkl
+110 ../data/var_036/train_f004.pkl
+111 ../data/var_037/train_f001.pkl
+112 ../data/var_037/train_f002.pkl
+113 ../data/var_037/train_f004.pkl
+114 ../data/var_038/train_f001.pkl
+115 ../data/var_038/train_f002.pkl
+116 ../data/var_038/train_f004.pkl
+117 ../data/var_039/train_f001.pkl
+118 ../data/var_039/train_f002.pkl
+119 ../data/var_039/train_f004.pkl
+120 ../data/var_040/train_f001.pkl
+121 ../data/var_040/train_f002.pkl
+122 ../data/var_040/train_f004.pkl
+123 ../data/var_041/train_f001.pkl
+124 ../data/var_041/train_f002.pkl
+125 ../data/var_041/train_f004.pkl
+126 ../data/var_042/train_f001.pkl
+127 ../data/var_042/train_f002.pkl
+128 ../data/var_042/train_f004.pkl
+129 ../data/var_043/train_f001.pkl
+130 ../data/var_043/train_f002.pkl
+131 ../data/var_043/train_f004.pkl
+132 ../data/var_044/train_f001.pkl
+133 ../data/var_044/train_f002.pkl
+134 ../data/var_044/train_f004.pkl
+135 ../data/var_045/train_f001.pkl
+136 ../data/var_045/train_f002.pkl
+137 ../data/var_045/train_f004.pkl
+138 ../data/var_046/train_f001.pkl
+139 ../data/var_046/train_f002.pkl
+140 ../data/var_046/train_f004.pkl
+141 ../data/var_047/train_f001.pkl
+142 ../data/var_047/train_f002.pkl
+143 ../data/var_047/train_f004.pkl
+144 ../data/var_048/train_f001.pkl
+145 ../data/var_048/train_f002.pkl
+146 ../data/var_048/train_f004.pkl
+147 ../data/var_049/train_f001.pkl
+148 ../data/var_049/train_f002.pkl
+149 ../data/var_049/train_f004.pkl
+150 ../data/var_050/train_f001.pkl
+151 ../data/var_050/train_f002.pkl
+152 ../data/var_050/train_f004.pkl
+153 ../data/var_051/train_f001.pkl
+154 ../data/var_051/train_f002.pkl
+155 ../data/var_051/train_f004.pkl
+156 ../data/var_052/train_f001.pkl
+157 ../data/var_052/train_f002.pkl
+158 ../data/var_052/train_f004.pkl
+159 ../data/var_053/train_f001.pkl
+160 ../data/var_053/train_f002.pkl
+161 ../data/var_053/train_f004.pkl
+162 ../data/var_054/train_f001.pkl
+163 ../data/var_054/train_f002.pkl
+164 ../data/var_054/train_f004.pkl
+165 ../data/var_055/train_f001.pkl
+166 ../data/var_055/train_f002.pkl
+167 ../data/var_055/train_f004.pkl
+168 ../data/var_056/train_f001.pkl
+169 ../data/var_056/train_f002.pkl
+170 ../data/var_056/train_f004.pkl
+171 ../data/var_057/train_f001.pkl
+172 ../data/var_057/train_f002.pkl
+173 ../data/var_057/train_f004.pkl
+174 ../data/var_058/train_f001.pkl
+175 ../data/var_058/train_f002.pkl
+176 ../data/var_058/train_f004.pkl
+177 ../data/var_059/train_f001.pkl
+178 ../data/var_059/train_f002.pkl
+179 ../data/var_059/train_f004.pkl
+180 ../data/var_060/train_f001.pkl
+181 ../data/var_060/train_f002.pkl
+182 ../data/var_060/train_f004.pkl
+183 ../data/var_061/train_f001.pkl
+184 ../data/var_061/train_f002.pkl
+185 ../data/var_061/train_f004.pkl
+186 ../data/var_062/train_f001.pkl
+187 ../data/var_062/train_f002.pkl
+188 ../data/var_062/train_f004.pkl
+189 ../data/var_063/train_f001.pkl
+190 ../data/var_063/train_f002.pkl
+191 ../data/var_063/train_f004.pkl
+192 ../data/var_064/train_f001.pkl
+193 ../data/var_064/train_f002.pkl
+194 ../data/var_064/train_f004.pkl
+195 ../data/var_065/train_f001.pkl
+196 ../data/var_065/train_f002.pkl
+197 ../data/var_065/train_f004.pkl
+198 ../data/var_066/train_f001.pkl
+199 ../data/var_066/train_f002.pkl
+200 ../data/var_066/train_f004.pkl
+201 ../data/var_067/train_f001.pkl
+202 ../data/var_067/train_f002.pkl
+203 ../data/var_067/train_f004.pkl
+204 ../data/var_068/train_f001.pkl
+205 ../data/var_068/train_f002.pkl
+206 ../data/var_068/train_f004.pkl
+207 ../data/var_069/train_f001.pkl
+208 ../data/var_069/train_f002.pkl
+209 ../data/var_069/train_f004.pkl
+210 ../data/var_070/train_f001.pkl
+211 ../data/var_070/train_f002.pkl
+212 ../data/var_070/train_f004.pkl
+213 ../data/var_071/train_f001.pkl
+214 ../data/var_071/train_f002.pkl
+215 ../data/var_071/train_f004.pkl
+216 ../data/var_072/train_f001.pkl
+217 ../data/var_072/train_f002.pkl
+218 ../data/var_072/train_f004.pkl
+219 ../data/var_073/train_f001.pkl
+220 ../data/var_073/train_f002.pkl
+221 ../data/var_073/train_f004.pkl
+222 ../data/var_074/train_f001.pkl
+223 ../data/var_074/train_f002.pkl
+224 ../data/var_074/train_f004.pkl
+225 ../data/var_075/train_f001.pkl
+226 ../data/var_075/train_f002.pkl
+227 ../data/var_075/train_f004.pkl
+228 ../data/var_076/train_f001.pkl
+229 ../data/var_076/train_f002.pkl
+230 ../data/var_076/train_f004.pkl
+231 ../data/var_077/train_f001.pkl
+232 ../data/var_077/train_f002.pkl
+233 ../data/var_077/train_f004.pkl
+234 ../data/var_078/train_f001.pkl
+235 ../data/var_078/train_f002.pkl
+236 ../data/var_078/train_f004.pkl
+237 ../data/var_079/train_f001.pkl
+238 ../data/var_079/train_f002.pkl
+239 ../data/var_079/train_f004.pkl
+240 ../data/var_080/train_f001.pkl
+241 ../data/var_080/train_f002.pkl
+242 ../data/var_080/train_f004.pkl
+243 ../data/var_081/train_f001.pkl
+244 ../data/var_081/train_f002.pkl
+245 ../data/var_081/train_f004.pkl
+246 ../data/var_082/train_f001.pkl
+247 ../data/var_082/train_f002.pkl
+248 ../data/var_082/train_f004.pkl
+249 ../data/var_083/train_f001.pkl
+250 ../data/var_083/train_f002.pkl
+251 ../data/var_083/train_f004.pkl
+252 ../data/var_084/train_f001.pkl
+253 ../data/var_084/train_f002.pkl
+254 ../data/var_084/train_f004.pkl
+255 ../data/var_085/train_f001.pkl
+256 ../data/var_085/train_f002.pkl
+257 ../data/var_085/train_f004.pkl
+258 ../data/var_086/train_f001.pkl
+259 ../data/var_086/train_f002.pkl
+260 ../data/var_086/train_f004.pkl
+261 ../data/var_087/train_f001.pkl
+262 ../data/var_087/train_f002.pkl
+263 ../data/var_087/train_f004.pkl
+264 ../data/var_088/train_f001.pkl
+265 ../data/var_088/train_f002.pkl
+266 ../data/var_088/train_f004.pkl
+267 ../data/var_089/train_f001.pkl
+268 ../data/var_089/train_f002.pkl
+269 ../data/var_089/train_f004.pkl
+270 ../data/var_090/train_f001.pkl
+271 ../data/var_090/train_f002.pkl
+272 ../data/var_090/train_f004.pkl
+273 ../data/var_091/train_f001.pkl
+274 ../data/var_091/train_f002.pkl
+275 ../data/var_091/train_f004.pkl
+276 ../data/var_092/train_f001.pkl
+277 ../data/var_092/train_f002.pkl
+278 ../data/var_092/train_f004.pkl
+279 ../data/var_093/train_f001.pkl
+280 ../data/var_093/train_f002.pkl
+281 ../data/var_093/train_f004.pkl
+282 ../data/var_094/train_f001.pkl
+283 ../data/var_094/train_f002.pkl
+284 ../data/var_094/train_f004.pkl
+285 ../data/var_095/train_f001.pkl
+286 ../data/var_095/train_f002.pkl
+287 ../data/var_095/train_f004.pkl
+288 ../data/var_096/train_f001.pkl
+289 ../data/var_096/train_f002.pkl
+290 ../data/var_096/train_f004.pkl
+291 ../data/var_097/train_f001.pkl
+292 ../data/var_097/train_f002.pkl
+293 ../data/var_097/train_f004.pkl
+294 ../data/var_098/train_f001.pkl
+295 ../data/var_098/train_f002.pkl
+296 ../data/var_098/train_f004.pkl
+297 ../data/var_099/train_f001.pkl
+298 ../data/var_099/train_f002.pkl
+299 ../data/var_099/train_f004.pkl
+300 ../data/var_100/train_f001.pkl
+301 ../data/var_100/train_f002.pkl
+302 ../data/var_100/train_f004.pkl
+303 ../data/var_101/train_f001.pkl
+304 ../data/var_101/train_f002.pkl
+305 ../data/var_101/train_f004.pkl
+306 ../data/var_102/train_f001.pkl
+307 ../data/var_102/train_f002.pkl
+308 ../data/var_102/train_f004.pkl
+309 ../data/var_103/train_f001.pkl
+310 ../data/var_103/train_f002.pkl
+311 ../data/var_103/train_f004.pkl
+312 ../data/var_104/train_f001.pkl
+313 ../data/var_104/train_f002.pkl
+314 ../data/var_104/train_f004.pkl
+315 ../data/var_105/train_f001.pkl
+316 ../data/var_105/train_f002.pkl
+317 ../data/var_105/train_f004.pkl
+318 ../data/var_106/train_f001.pkl
+319 ../data/var_106/train_f002.pkl
+320 ../data/var_106/train_f004.pkl
+321 ../data/var_107/train_f001.pkl
+322 ../data/var_107/train_f002.pkl
+323 ../data/var_107/train_f004.pkl
+324 ../data/var_108/train_f001.pkl
+325 ../data/var_108/train_f002.pkl
+326 ../data/var_108/train_f004.pkl
+327 ../data/var_109/train_f001.pkl
+328 ../data/var_109/train_f002.pkl
+329 ../data/var_109/train_f004.pkl
+330 ../data/var_110/train_f001.pkl
+331 ../data/var_110/train_f002.pkl
+332 ../data/var_110/train_f004.pkl
+333 ../data/var_111/train_f001.pkl
+334 ../data/var_111/train_f002.pkl
+335 ../data/var_111/train_f004.pkl
+336 ../data/var_112/train_f001.pkl
+337 ../data/var_112/train_f002.pkl
+338 ../data/var_112/train_f004.pkl
+339 ../data/var_113/train_f001.pkl
+340 ../data/var_113/train_f002.pkl
+341 ../data/var_113/train_f004.pkl
+342 ../data/var_114/train_f001.pkl
+343 ../data/var_114/train_f002.pkl
+344 ../data/var_114/train_f004.pkl
+345 ../data/var_115/train_f001.pkl
+346 ../data/var_115/train_f002.pkl
+347 ../data/var_115/train_f004.pkl
+348 ../data/var_116/train_f001.pkl
+349 ../data/var_116/train_f002.pkl
+350 ../data/var_116/train_f004.pkl
+351 ../data/var_117/train_f001.pkl
+352 ../data/var_117/train_f002.pkl
+353 ../data/var_117/train_f004.pkl
+354 ../data/var_118/train_f001.pkl
+355 ../data/var_118/train_f002.pkl
+356 ../data/var_118/train_f004.pkl
+357 ../data/var_119/train_f001.pkl
+358 ../data/var_119/train_f002.pkl
+359 ../data/var_119/train_f004.pkl
+360 ../data/var_120/train_f001.pkl
+361 ../data/var_120/train_f002.pkl
+362 ../data/var_120/train_f004.pkl
+363 ../data/var_121/train_f001.pkl
+364 ../data/var_121/train_f002.pkl
+365 ../data/var_121/train_f004.pkl
+366 ../data/var_122/train_f001.pkl
+367 ../data/var_122/train_f002.pkl
+368 ../data/var_122/train_f004.pkl
+369 ../data/var_123/train_f001.pkl
+370 ../data/var_123/train_f002.pkl
+371 ../data/var_123/train_f004.pkl
+372 ../data/var_124/train_f001.pkl
+373 ../data/var_124/train_f002.pkl
+374 ../data/var_124/train_f004.pkl
+375 ../data/var_125/train_f001.pkl
+376 ../data/var_125/train_f002.pkl
+377 ../data/var_125/train_f004.pkl
+378 ../data/var_126/train_f001.pkl
+379 ../data/var_126/train_f002.pkl
+380 ../data/var_126/train_f004.pkl
+381 ../data/var_127/train_f001.pkl
+382 ../data/var_127/train_f002.pkl
+383 ../data/var_127/train_f004.pkl
+384 ../data/var_128/train_f001.pkl
+385 ../data/var_128/train_f002.pkl
+386 ../data/var_128/train_f004.pkl
+387 ../data/var_129/train_f001.pkl
+388 ../data/var_129/train_f002.pkl
+389 ../data/var_129/train_f004.pkl
+390 ../data/var_130/train_f001.pkl
+391 ../data/var_130/train_f002.pkl
+392 ../data/var_130/train_f004.pkl
+393 ../data/var_131/train_f001.pkl
+394 ../data/var_131/train_f002.pkl
+395 ../data/var_131/train_f004.pkl
+396 ../data/var_132/train_f001.pkl
+397 ../data/var_132/train_f002.pkl
+398 ../data/var_132/train_f004.pkl
+399 ../data/var_133/train_f001.pkl
+400 ../data/var_133/train_f002.pkl
+401 ../data/var_133/train_f004.pkl
+402 ../data/var_134/train_f001.pkl
+403 ../data/var_134/train_f002.pkl
+404 ../data/var_134/train_f004.pkl
+405 ../data/var_135/train_f001.pkl
+406 ../data/var_135/train_f002.pkl
+407 ../data/var_135/train_f004.pkl
+408 ../data/var_136/train_f001.pkl
+409 ../data/var_136/train_f002.pkl
+410 ../data/var_136/train_f004.pkl
+411 ../data/var_137/train_f001.pkl
+412 ../data/var_137/train_f002.pkl
+413 ../data/var_137/train_f004.pkl
+414 ../data/var_138/train_f001.pkl
+415 ../data/var_138/train_f002.pkl
+416 ../data/var_138/train_f004.pkl
+417 ../data/var_139/train_f001.pkl
+418 ../data/var_139/train_f002.pkl
+419 ../data/var_139/train_f004.pkl
+420 ../data/var_140/train_f001.pkl
+421 ../data/var_140/train_f002.pkl
+422 ../data/var_140/train_f004.pkl
+423 ../data/var_141/train_f001.pkl
+424 ../data/var_141/train_f002.pkl
+425 ../data/var_141/train_f004.pkl
+426 ../data/var_142/train_f001.pkl
+427 ../data/var_142/train_f002.pkl
+428 ../data/var_142/train_f004.pkl
+429 ../data/var_143/train_f001.pkl
+430 ../data/var_143/train_f002.pkl
+431 ../data/var_143/train_f004.pkl
+432 ../data/var_144/train_f001.pkl
+433 ../data/var_144/train_f002.pkl
+434 ../data/var_144/train_f004.pkl
+435 ../data/var_145/train_f001.pkl
+436 ../data/var_145/train_f002.pkl
+437 ../data/var_145/train_f004.pkl
+438 ../data/var_146/train_f001.pkl
+439 ../data/var_146/train_f002.pkl
+440 ../data/var_146/train_f004.pkl
+441 ../data/var_147/train_f001.pkl
+442 ../data/var_147/train_f002.pkl
+443 ../data/var_147/train_f004.pkl
+444 ../data/var_148/train_f001.pkl
+445 ../data/var_148/train_f002.pkl
+446 ../data/var_148/train_f004.pkl
+447 ../data/var_149/train_f001.pkl
+448 ../data/var_149/train_f002.pkl
+449 ../data/var_149/train_f004.pkl
+450 ../data/var_150/train_f001.pkl
+451 ../data/var_150/train_f002.pkl
+452 ../data/var_150/train_f004.pkl
+453 ../data/var_151/train_f001.pkl
+454 ../data/var_151/train_f002.pkl
+455 ../data/var_151/train_f004.pkl
+456 ../data/var_152/train_f001.pkl
+457 ../data/var_152/train_f002.pkl
+458 ../data/var_152/train_f004.pkl
+459 ../data/var_153/train_f001.pkl
+460 ../data/var_153/train_f002.pkl
+461 ../data/var_153/train_f004.pkl
+462 ../data/var_154/train_f001.pkl
+463 ../data/var_154/train_f002.pkl
+464 ../data/var_154/train_f004.pkl
+465 ../data/var_155/train_f001.pkl
+466 ../data/var_155/train_f002.pkl
+467 ../data/var_155/train_f004.pkl
+468 ../data/var_156/train_f001.pkl
+469 ../data/var_156/train_f002.pkl
+470 ../data/var_156/train_f004.pkl
+471 ../data/var_157/train_f001.pkl
+472 ../data/var_157/train_f002.pkl
+473 ../data/var_157/train_f004.pkl
+474 ../data/var_158/train_f001.pkl
+475 ../data/var_158/train_f002.pkl
+476 ../data/var_158/train_f004.pkl
+477 ../data/var_159/train_f001.pkl
+478 ../data/var_159/train_f002.pkl
+479 ../data/var_159/train_f004.pkl
+480 ../data/var_160/train_f001.pkl
+481 ../data/var_160/train_f002.pkl
+482 ../data/var_160/train_f004.pkl
+483 ../data/var_161/train_f001.pkl
+484 ../data/var_161/train_f002.pkl
+485 ../data/var_161/train_f004.pkl
+486 ../data/var_162/train_f001.pkl
+487 ../data/var_162/train_f002.pkl
+488 ../data/var_162/train_f004.pkl
+489 ../data/var_163/train_f001.pkl
+490 ../data/var_163/train_f002.pkl
+491 ../data/var_163/train_f004.pkl
+492 ../data/var_164/train_f001.pkl
+493 ../data/var_164/train_f002.pkl
+494 ../data/var_164/train_f004.pkl
+495 ../data/var_165/train_f001.pkl
+496 ../data/var_165/train_f002.pkl
+497 ../data/var_165/train_f004.pkl
+498 ../data/var_166/train_f001.pkl
+499 ../data/var_166/train_f002.pkl
+500 ../data/var_166/train_f004.pkl
+501 ../data/var_167/train_f001.pkl
+502 ../data/var_167/train_f002.pkl
+503 ../data/var_167/train_f004.pkl
+504 ../data/var_168/train_f001.pkl
+505 ../data/var_168/train_f002.pkl
+506 ../data/var_168/train_f004.pkl
+507 ../data/var_169/train_f001.pkl
+508 ../data/var_169/train_f002.pkl
+509 ../data/var_169/train_f004.pkl
+510 ../data/var_170/train_f001.pkl
+511 ../data/var_170/train_f002.pkl
+512 ../data/var_170/train_f004.pkl
+513 ../data/var_171/train_f001.pkl
+514 ../data/var_171/train_f002.pkl
+515 ../data/var_171/train_f004.pkl
+516 ../data/var_172/train_f001.pkl
+517 ../data/var_172/train_f002.pkl
+518 ../data/var_172/train_f004.pkl
+519 ../data/var_173/train_f001.pkl
+520 ../data/var_173/train_f002.pkl
+521 ../data/var_173/train_f004.pkl
+522 ../data/var_174/train_f001.pkl
+523 ../data/var_174/train_f002.pkl
+524 ../data/var_174/train_f004.pkl
+525 ../data/var_175/train_f001.pkl
+526 ../data/var_175/train_f002.pkl
+527 ../data/var_175/train_f004.pkl
+528 ../data/var_176/train_f001.pkl
+529 ../data/var_176/train_f002.pkl
+530 ../data/var_176/train_f004.pkl
+531 ../data/var_177/train_f001.pkl
+532 ../data/var_177/train_f002.pkl
+533 ../data/var_177/train_f004.pkl
+534 ../data/var_178/train_f001.pkl
+535 ../data/var_178/train_f002.pkl
+536 ../data/var_178/train_f004.pkl
+537 ../data/var_179/train_f001.pkl
+538 ../data/var_179/train_f002.pkl
+539 ../data/var_179/train_f004.pkl
+540 ../data/var_180/train_f001.pkl
+541 ../data/var_180/train_f002.pkl
+542 ../data/var_180/train_f004.pkl
+543 ../data/var_181/train_f001.pkl
+544 ../data/var_181/train_f002.pkl
+545 ../data/var_181/train_f004.pkl
+546 ../data/var_182/train_f001.pkl
+547 ../data/var_182/train_f002.pkl
+548 ../data/var_182/train_f004.pkl
+549 ../data/var_183/train_f001.pkl
+550 ../data/var_183/train_f002.pkl
+551 ../data/var_183/train_f004.pkl
+552 ../data/var_184/train_f001.pkl
+553 ../data/var_184/train_f002.pkl
+554 ../data/var_184/train_f004.pkl
+555 ../data/var_185/train_f001.pkl
+556 ../data/var_185/train_f002.pkl
+557 ../data/var_185/train_f004.pkl
+558 ../data/var_186/train_f001.pkl
+559 ../data/var_186/train_f002.pkl
+560 ../data/var_186/train_f004.pkl
+561 ../data/var_187/train_f001.pkl
+562 ../data/var_187/train_f002.pkl
+563 ../data/var_187/train_f004.pkl
+564 ../data/var_188/train_f001.pkl
+565 ../data/var_188/train_f002.pkl
+566 ../data/var_188/train_f004.pkl
+567 ../data/var_189/train_f001.pkl
+568 ../data/var_189/train_f002.pkl
+569 ../data/var_189/train_f004.pkl
+570 ../data/var_190/train_f001.pkl
+571 ../data/var_190/train_f002.pkl
+572 ../data/var_190/train_f004.pkl
+573 ../data/var_191/train_f001.pkl
+574 ../data/var_191/train_f002.pkl
+575 ../data/var_191/train_f004.pkl
+576 ../data/var_192/train_f001.pkl
+577 ../data/var_192/train_f002.pkl
+578 ../data/var_192/train_f004.pkl
+579 ../data/var_193/train_f001.pkl
+580 ../data/var_193/train_f002.pkl
+581 ../data/var_193/train_f004.pkl
+582 ../data/var_194/train_f001.pkl
+583 ../data/var_194/train_f002.pkl
+584 ../data/var_194/train_f004.pkl
+585 ../data/var_195/train_f001.pkl
+586 ../data/var_195/train_f002.pkl
+587 ../data/var_195/train_f004.pkl
+588 ../data/var_196/train_f001.pkl
+589 ../data/var_196/train_f002.pkl
+590 ../data/var_196/train_f004.pkl
+591 ../data/var_197/train_f001.pkl
+592 ../data/var_197/train_f002.pkl
+593 ../data/var_197/train_f004.pkl
+594 ../data/var_198/train_f001.pkl
+595 ../data/var_198/train_f002.pkl
+596 ../data/var_198/train_f004.pkl
+597 ../data/var_199/train_f001.pkl
+598 ../data/var_199/train_f002.pkl
+599 ../data/var_199/train_f004.pkl
+  0%|          | 0/600 [00:00<?, ?it/s]100%|██████████| 600/600 [00:03<00:00, 168.44it/s]
 no dup :) 
-X_train.shape (200000, 1000)
-[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
-This may cause significantly different results comparing to the previous versions of LightGBM.
-Try to set boost_from_average=false, if your old models produce bad results
-[LightGBM] [Info] Number of positive: 16078, number of negative: 143921
-[LightGBM] [Info] Total Bins 145841
-[LightGBM] [Info] Number of data: 159999, number of used features: 999
-[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
-This may cause significantly different results comparing to the previous versions of LightGBM.
-Try to set boost_from_average=false, if your old models produce bad results
-[LightGBM] [Info] Number of positive: 16078, number of negative: 143921
-[LightGBM] [Info] Total Bins 145841
-[LightGBM] [Info] Number of data: 159999, number of used features: 999
-[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
-This may cause significantly different results comparing to the previous versions of LightGBM.
-Try to set boost_from_average=false, if your old models produce bad results
-[LightGBM] [Info] Number of positive: 16078, number of negative: 143922
-[LightGBM] [Info] Total Bins 145841
-[LightGBM] [Info] Number of data: 160000, number of used features: 999
-[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
-This may cause significantly different results comparing to the previous versions of LightGBM.
-Try to set boost_from_average=false, if your old models produce bad results
-[LightGBM] [Info] Number of positive: 16079, number of negative: 143922
-[LightGBM] [Info] Total Bins 145841
-[LightGBM] [Info] Number of data: 160001, number of used features: 999
-[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
-This may cause significantly different results comparing to the previous versions of LightGBM.
-Try to set boost_from_average=false, if your old models produce bad results
-[LightGBM] [Info] Number of positive: 16079, number of negative: 143922
-[LightGBM] [Info] Total Bins 145841
-[LightGBM] [Info] Number of data: 160001, number of used features: 999
-[50]	cv_agg's auc: 0.791492 + 0.00406592
-[100]	cv_agg's auc: 0.810469 + 0.00251968
-[150]	cv_agg's auc: 0.812448 + 0.00278271
-[200]	cv_agg's auc: 0.815361 + 0.00254456
-[250]	cv_agg's auc: 0.818158 + 0.00250311
-[300]	cv_agg's auc: 0.821727 + 0.00193105
-[350]	cv_agg's auc: 0.824387 + 0.00298017
-[400]	cv_agg's auc: 0.826487 + 0.00254475
-[450]	cv_agg's auc: 0.829661 + 0.00221268
-[500]	cv_agg's auc: 0.832935 + 0.00240389
-[550]	cv_agg's auc: 0.836507 + 0.0027454
-[600]	cv_agg's auc: 0.839845 + 0.0026303
-[650]	cv_agg's auc: 0.842346 + 0.00282474
-[700]	cv_agg's auc: 0.844343 + 0.00276169
-[750]	cv_agg's auc: 0.846343 + 0.00292606
-[800]	cv_agg's auc: 0.848395 + 0.00298545
-[850]	cv_agg's auc: 0.850264 + 0.00275402
-[900]	cv_agg's auc: 0.851976 + 0.00283033
-[950]	cv_agg's auc: 0.853446 + 0.00279173
-[1000]	cv_agg's auc: 0.854956 + 0.0028165
-[1050]	cv_agg's auc: 0.856726 + 0.00280306
-[1100]	cv_agg's auc: 0.858139 + 0.00282868
-[1150]	cv_agg's auc: 0.859439 + 0.00269243
-[1200]	cv_agg's auc: 0.86099 + 0.00259329
-[1250]	cv_agg's auc: 0.862265 + 0.00257148
-[1300]	cv_agg's auc: 0.863433 + 0.00264816
-[1350]	cv_agg's auc: 0.864465 + 0.00269372
-[1400]	cv_agg's auc: 0.865584 + 0.00282501
-[1450]	cv_agg's auc: 0.866523 + 0.00283719
-[1500]	cv_agg's auc: 0.867567 + 0.00281256
-[1550]	cv_agg's auc: 0.868596 + 0.00289178
-[1600]	cv_agg's auc: 0.869592 + 0.00289643
-[1650]	cv_agg's auc: 0.870441 + 0.00298673
-[1700]	cv_agg's auc: 0.871302 + 0.00292419
-[1750]	cv_agg's auc: 0.872038 + 0.00296735
-[1800]	cv_agg's auc: 0.872697 + 0.00290119
-[1850]	cv_agg's auc: 0.873291 + 0.00287388
-[1900]	cv_agg's auc: 0.874033 + 0.00285117
-[1950]	cv_agg's auc: 0.874795 + 0.00284709
-[2000]	cv_agg's auc: 0.875409 + 0.00284646
-[2050]	cv_agg's auc: 0.876048 + 0.00286252
-[2100]	cv_agg's auc: 0.876657 + 0.00285371
-[2150]	cv_agg's auc: 0.877216 + 0.00285325
-[2200]	cv_agg's auc: 0.877795 + 0.00282702
-[2250]	cv_agg's auc: 0.878415 + 0.00285408
-[2300]	cv_agg's auc: 0.878903 + 0.00284844
-[2350]	cv_agg's auc: 0.879326 + 0.00285066
-[2400]	cv_agg's auc: 0.879869 + 0.00285809
-[2450]	cv_agg's auc: 0.880367 + 0.00287933
-[2500]	cv_agg's auc: 0.88091 + 0.00286537
-[2550]	cv_agg's auc: 0.881418 + 0.00287957
-[2600]	cv_agg's auc: 0.881904 + 0.00285541
-[2650]	cv_agg's auc: 0.88237 + 0.00286588
-[2700]	cv_agg's auc: 0.882786 + 0.00287079
-[2750]	cv_agg's auc: 0.88315 + 0.0028596
-[2800]	cv_agg's auc: 0.883599 + 0.00288335
-[2850]	cv_agg's auc: 0.883955 + 0.00289633
-[2900]	cv_agg's auc: 0.884265 + 0.00288007
-[2950]	cv_agg's auc: 0.88461 + 0.00288346
-[3000]	cv_agg's auc: 0.885011 + 0.00287067
-[3050]	cv_agg's auc: 0.885343 + 0.00282853
-[3100]	cv_agg's auc: 0.885642 + 0.00281399
-[3150]	cv_agg's auc: 0.886004 + 0.00282245
-[3200]	cv_agg's auc: 0.886339 + 0.00279354
-[3250]	cv_agg's auc: 0.886627 + 0.00279096
-[3300]	cv_agg's auc: 0.886925 + 0.00276571
-[3350]	cv_agg's auc: 0.887207 + 0.00274973
-[3400]	cv_agg's auc: 0.887472 + 0.0027502
-[3450]	cv_agg's auc: 0.887761 + 0.00273768
-[3500]	cv_agg's auc: 0.888024 + 0.00271659
-[3550]	cv_agg's auc: 0.888269 + 0.0027066
-[3600]	cv_agg's auc: 0.888493 + 0.00270954
-[3650]	cv_agg's auc: 0.888686 + 0.00271967
-[3700]	cv_agg's auc: 0.888929 + 0.00272164
-[3750]	cv_agg's auc: 0.889155 + 0.00270648
-[3800]	cv_agg's auc: 0.889354 + 0.00268041
-[3850]	cv_agg's auc: 0.88959 + 0.00268987
-[3900]	cv_agg's auc: 0.889806 + 0.00268654
-[3950]	cv_agg's auc: 0.890032 + 0.0026542
-[4000]	cv_agg's auc: 0.890236 + 0.00265812
-[4050]	cv_agg's auc: 0.890458 + 0.00265334
-[4100]	cv_agg's auc: 0.890675 + 0.00262895
-[4150]	cv_agg's auc: 0.890878 + 0.00262972
-[4200]	cv_agg's auc: 0.891055 + 0.00262983
-[4250]	cv_agg's auc: 0.89123 + 0.00261985
-[4300]	cv_agg's auc: 0.891407 + 0.00259035
-[4350]	cv_agg's auc: 0.891596 + 0.00259224
-[4400]	cv_agg's auc: 0.891757 + 0.002583
-[4450]	cv_agg's auc: 0.891916 + 0.00260317
-[4500]	cv_agg's auc: 0.892062 + 0.0025895
-[4550]	cv_agg's auc: 0.892243 + 0.00258249
-[4600]	cv_agg's auc: 0.892392 + 0.00258428
-[4650]	cv_agg's auc: 0.892522 + 0.00258089
-[4700]	cv_agg's auc: 0.892695 + 0.00258609
-[4750]	cv_agg's auc: 0.892842 + 0.00259534
-[4800]	cv_agg's auc: 0.892969 + 0.00257736
-[4850]	cv_agg's auc: 0.893121 + 0.00258061
-[4900]	cv_agg's auc: 0.89325 + 0.00255602
-[4950]	cv_agg's auc: 0.893378 + 0.00254096
-[5000]	cv_agg's auc: 0.893541 + 0.00254037
-[5050]	cv_agg's auc: 0.893673 + 0.00252326
-[5100]	cv_agg's auc: 0.89382 + 0.00250628
-[5150]	cv_agg's auc: 0.893949 + 0.00251222
-[5200]	cv_agg's auc: 0.894061 + 0.00250961
-[5250]	cv_agg's auc: 0.894151 + 0.00249513
-[5300]	cv_agg's auc: 0.894262 + 0.0025103
-[5350]	cv_agg's auc: 0.894382 + 0.00252285
-[5400]	cv_agg's auc: 0.894493 + 0.0025136
-[5450]	cv_agg's auc: 0.894596 + 0.00250425
-[5500]	cv_agg's auc: 0.894698 + 0.0025027
-[5550]	cv_agg's auc: 0.894814 + 0.00252328
-[5600]	cv_agg's auc: 0.894909 + 0.00252421
-[5650]	cv_agg's auc: 0.895031 + 0.00253323
-[5700]	cv_agg's auc: 0.89511 + 0.0025169
-[5750]	cv_agg's auc: 0.895246 + 0.00253236
-[5800]	cv_agg's auc: 0.895333 + 0.00253838
-[5850]	cv_agg's auc: 0.895416 + 0.00253336
-[5900]	cv_agg's auc: 0.895528 + 0.00253225
-[5950]	cv_agg's auc: 0.89561 + 0.00249912
-[6000]	cv_agg's auc: 0.895677 + 0.00250411
-[6050]	cv_agg's auc: 0.895785 + 0.00250396
-[6100]	cv_agg's auc: 0.895858 + 0.00251956
-[6150]	cv_agg's auc: 0.89594 + 0.00253372
-[6200]	cv_agg's auc: 0.896027 + 0.00253808
-[6250]	cv_agg's auc: 0.89609 + 0.00253384
-[6300]	cv_agg's auc: 0.89615 + 0.00255303
-[6350]	cv_agg's auc: 0.896239 + 0.00255012
-[6400]	cv_agg's auc: 0.896322 + 0.00255816
-[6450]	cv_agg's auc: 0.896399 + 0.00256049
-[6500]	cv_agg's auc: 0.89648 + 0.00256501
-[6550]	cv_agg's auc: 0.896567 + 0.00256228
-[6600]	cv_agg's auc: 0.896637 + 0.00255015
-[6650]	cv_agg's auc: 0.896694 + 0.00253333
-[6700]	cv_agg's auc: 0.896766 + 0.00253429
-[6750]	cv_agg's auc: 0.896831 + 0.00252744
-[6800]	cv_agg's auc: 0.896899 + 0.00251391
-[6850]	cv_agg's auc: 0.89696 + 0.00252104
-[6900]	cv_agg's auc: 0.897057 + 0.00252005
-[6950]	cv_agg's auc: 0.897112 + 0.00252727
-[7000]	cv_agg's auc: 0.897168 + 0.00252805
-[7050]	cv_agg's auc: 0.897233 + 0.00252055
-[7100]	cv_agg's auc: 0.897307 + 0.00251862
-[7150]	cv_agg's auc: 0.897402 + 0.00252311
-[7200]	cv_agg's auc: 0.897462 + 0.00252791
-[7250]	cv_agg's auc: 0.897516 + 0.00255028
-[7300]	cv_agg's auc: 0.897551 + 0.00255035
-[7350]	cv_agg's auc: 0.897611 + 0.00255667
-[7400]	cv_agg's auc: 0.897653 + 0.00257505
-[7450]	cv_agg's auc: 0.897702 + 0.00259628
-[7500]	cv_agg's auc: 0.89777 + 0.00258004
-[7550]	cv_agg's auc: 0.897806 + 0.00257706
-[7600]	cv_agg's auc: 0.897866 + 0.00259173
-[7650]	cv_agg's auc: 0.897908 + 0.0025851
-[7700]	cv_agg's auc: 0.897953 + 0.00258246
-[7750]	cv_agg's auc: 0.897995 + 0.00258205
-[7800]	cv_agg's auc: 0.898055 + 0.00259413
-[7850]	cv_agg's auc: 0.8981 + 0.00259824
-[7900]	cv_agg's auc: 0.898145 + 0.0025922
-[7950]	cv_agg's auc: 0.898208 + 0.0025784
-[8000]	cv_agg's auc: 0.898241 + 0.00257106
-[8050]	cv_agg's auc: 0.898274 + 0.00256136
-[8100]	cv_agg's auc: 0.8983 + 0.00255621
-[8150]	cv_agg's auc: 0.898329 + 0.00257907
-[8200]	cv_agg's auc: 0.898386 + 0.00257956
-[8250]	cv_agg's auc: 0.898437 + 0.00258921
-[8300]	cv_agg's auc: 0.898443 + 0.00257865
-[8350]	cv_agg's auc: 0.89847 + 0.00256342
-[8400]	cv_agg's auc: 0.898499 + 0.00257671
-[8450]	cv_agg's auc: 0.89854 + 0.00257518
-[8500]	cv_agg's auc: 0.898581 + 0.00258784
-[8550]	cv_agg's auc: 0.898606 + 0.00259859
-[8600]	cv_agg's auc: 0.898651 + 0.00260092
-[8650]	cv_agg's auc: 0.89868 + 0.00260226
-[8700]	cv_agg's auc: 0.89869 + 0.00260021
-[8750]	cv_agg's auc: 0.898731 + 0.00260336
-[8800]	cv_agg's auc: 0.898762 + 0.00259291
-[8850]	cv_agg's auc: 0.898785 + 0.00259664
-[8900]	cv_agg's auc: 0.89882 + 0.00259328
-[8950]	cv_agg's auc: 0.898854 + 0.0025847
-[9000]	cv_agg's auc: 0.898875 + 0.00258314
-[9050]	cv_agg's auc: 0.898902 + 0.0025982
-[9100]	cv_agg's auc: 0.898924 + 0.00259685
-[9150]	cv_agg's auc: 0.898955 + 0.00259424
-[9200]	cv_agg's auc: 0.898994 + 0.00259859
-[9250]	cv_agg's auc: 0.899032 + 0.00260016
-[9300]	cv_agg's auc: 0.89906 + 0.0026246
-[9350]	cv_agg's auc: 0.899085 + 0.00263521
-[9400]	cv_agg's auc: 0.89911 + 0.00264359
-[9450]	cv_agg's auc: 0.89915 + 0.00263483
-[9500]	cv_agg's auc: 0.899176 + 0.00263997
-[9550]	cv_agg's auc: 0.899216 + 0.00265443
-[9600]	cv_agg's auc: 0.899242 + 0.00265722
-[9650]	cv_agg's auc: 0.899266 + 0.00265971
-[9700]	cv_agg's auc: 0.89928 + 0.00265427
-[9750]	cv_agg's auc: 0.899321 + 0.00266559
-[9800]	cv_agg's auc: 0.899345 + 0.00267032
-[9850]	cv_agg's auc: 0.899354 + 0.00266145
-[9900]	cv_agg's auc: 0.899389 + 0.00267244
-[9950]	cv_agg's auc: 0.899421 + 0.00266237
-[10000]	cv_agg's auc: 0.899439 + 0.0026535
-[10050]	cv_agg's auc: 0.899462 + 0.00266106
-[10100]	cv_agg's auc: 0.899483 + 0.00267653
-[10150]	cv_agg's auc: 0.899507 + 0.00268648
-[10200]	cv_agg's auc: 0.899519 + 0.00268751
-[10250]	cv_agg's auc: 0.899551 + 0.00268378
-[10300]	cv_agg's auc: 0.899581 + 0.00268903
-[10350]	cv_agg's auc: 0.899612 + 0.00268498
-[10400]	cv_agg's auc: 0.899633 + 0.00266989
-[10450]	cv_agg's auc: 0.899647 + 0.00266592
-[10500]	cv_agg's auc: 0.899664 + 0.002655
-[10550]	cv_agg's auc: 0.899689 + 0.00265724
-[10600]	cv_agg's auc: 0.899699 + 0.00266058
-[10650]	cv_agg's auc: 0.89971 + 0.00265921
-[10700]	cv_agg's auc: 0.899717 + 0.00264492
-[10750]	cv_agg's auc: 0.899728 + 0.00263361
-[10800]	cv_agg's auc: 0.899746 + 0.0026299
-[10850]	cv_agg's auc: 0.899767 + 0.00264954
-[10900]	cv_agg's auc: 0.899788 + 0.00264744
-[10950]	cv_agg's auc: 0.899807 + 0.00264264
-[11000]	cv_agg's auc: 0.899793 + 0.00263557
-[11050]	cv_agg's auc: 0.899805 + 0.00261463
+X_train.shape (200000, 2200)
+[50]	cv_agg's auc: 0.788012 + 0.00245119
+[100]	cv_agg's auc: 0.807961 + 0.00186762
+[150]	cv_agg's auc: 0.822979 + 0.00123275
+[200]	cv_agg's auc: 0.834074 + 0.00165508
+[250]	cv_agg's auc: 0.843382 + 0.00196609
+[300]	cv_agg's auc: 0.851122 + 0.00224011
+[350]	cv_agg's auc: 0.8571 + 0.00218844
+[400]	cv_agg's auc: 0.862079 + 0.00245519
+[450]	cv_agg's auc: 0.866407 + 0.0025261
+[500]	cv_agg's auc: 0.869879 + 0.00267292
+[550]	cv_agg's auc: 0.873133 + 0.00277552
+[600]	cv_agg's auc: 0.875652 + 0.00274366
+[650]	cv_agg's auc: 0.877952 + 0.00277794
+[700]	cv_agg's auc: 0.880092 + 0.00292178
+[750]	cv_agg's auc: 0.881982 + 0.00306835
+[800]	cv_agg's auc: 0.883622 + 0.00313038
+[850]	cv_agg's auc: 0.885071 + 0.00314823
+[900]	cv_agg's auc: 0.886416 + 0.00305608
+[950]	cv_agg's auc: 0.887644 + 0.00299861
+[1000]	cv_agg's auc: 0.888761 + 0.00301174
+[1050]	cv_agg's auc: 0.889719 + 0.00298747
+[1100]	cv_agg's auc: 0.890635 + 0.00301247
+[1150]	cv_agg's auc: 0.891551 + 0.00309395
+[1200]	cv_agg's auc: 0.892306 + 0.00307412
+[1250]	cv_agg's auc: 0.893017 + 0.00308674
+[1300]	cv_agg's auc: 0.893679 + 0.00302146
+[1350]	cv_agg's auc: 0.894327 + 0.00302712
+[1400]	cv_agg's auc: 0.894877 + 0.00305764
+[1450]	cv_agg's auc: 0.895377 + 0.00306751
+[1500]	cv_agg's auc: 0.895864 + 0.00305009
+[1550]	cv_agg's auc: 0.896364 + 0.00304503
+[1600]	cv_agg's auc: 0.896858 + 0.00301944
+[1650]	cv_agg's auc: 0.897254 + 0.00302476
+[1700]	cv_agg's auc: 0.89763 + 0.00299563
+[1750]	cv_agg's auc: 0.897953 + 0.00300973
+[1800]	cv_agg's auc: 0.898285 + 0.0029896
+[1850]	cv_agg's auc: 0.898651 + 0.00297265
+[1900]	cv_agg's auc: 0.898952 + 0.00298862
+[1950]	cv_agg's auc: 0.899198 + 0.0030135
+[2000]	cv_agg's auc: 0.899447 + 0.00299388
+[2050]	cv_agg's auc: 0.899693 + 0.00303608
+[2100]	cv_agg's auc: 0.899941 + 0.00306054
+[2150]	cv_agg's auc: 0.900139 + 0.00305254
+[2200]	cv_agg's auc: 0.900343 + 0.00307396
+[2250]	cv_agg's auc: 0.900561 + 0.00310765
+[2300]	cv_agg's auc: 0.9008 + 0.00310701
+[2350]	cv_agg's auc: 0.900984 + 0.00307955
+[2400]	cv_agg's auc: 0.901097 + 0.00307788
+[2450]	cv_agg's auc: 0.901245 + 0.00312079
+[2500]	cv_agg's auc: 0.9014 + 0.00312392
+[2550]	cv_agg's auc: 0.901564 + 0.00312692
+[2600]	cv_agg's auc: 0.901677 + 0.00315355
+[2650]	cv_agg's auc: 0.901762 + 0.00313548
+[2700]	cv_agg's auc: 0.901883 + 0.00314388
+[2750]	cv_agg's auc: 0.901997 + 0.00312737
+[2800]	cv_agg's auc: 0.902094 + 0.00308725
+[2850]	cv_agg's auc: 0.902233 + 0.00310794
+[2900]	cv_agg's auc: 0.902332 + 0.00308869
+[2950]	cv_agg's auc: 0.902442 + 0.00314046
+[3000]	cv_agg's auc: 0.90253 + 0.00314559
+[3050]	cv_agg's auc: 0.902629 + 0.00312919
+[3100]	cv_agg's auc: 0.902722 + 0.00313865
+[3150]	cv_agg's auc: 0.902819 + 0.00311362
+[3200]	cv_agg's auc: 0.902879 + 0.00310789
+[3250]	cv_agg's auc: 0.902958 + 0.00311447
+[3300]	cv_agg's auc: 0.903058 + 0.00310633
+[3350]	cv_agg's auc: 0.903148 + 0.00312064
+[3400]	cv_agg's auc: 0.903219 + 0.00312286
+[3450]	cv_agg's auc: 0.903258 + 0.00310327
+[3500]	cv_agg's auc: 0.903337 + 0.00307484
+[3550]	cv_agg's auc: 0.903421 + 0.00308181
+[3600]	cv_agg's auc: 0.903482 + 0.00308218
+[3650]	cv_agg's auc: 0.903523 + 0.0030603
+[3700]	cv_agg's auc: 0.903554 + 0.00308311
+[3750]	cv_agg's auc: 0.90359 + 0.00306352
+[3800]	cv_agg's auc: 0.903634 + 0.00306194
+[3850]	cv_agg's auc: 0.903689 + 0.00305458
+[3900]	cv_agg's auc: 0.903746 + 0.00307078
+[3950]	cv_agg's auc: 0.90381 + 0.00305407
+[4000]	cv_agg's auc: 0.903884 + 0.00306606
+[4050]	cv_agg's auc: 0.903921 + 0.00304571
+[4100]	cv_agg's auc: 0.903969 + 0.00303421
+[4150]	cv_agg's auc: 0.904016 + 0.00303856
+[4200]	cv_agg's auc: 0.904061 + 0.0030363
+[4250]	cv_agg's auc: 0.904093 + 0.00302607
+[4300]	cv_agg's auc: 0.904122 + 0.00305499
+[4350]	cv_agg's auc: 0.904174 + 0.00304552
+[4400]	cv_agg's auc: 0.904208 + 0.00304957
+[4450]	cv_agg's auc: 0.904246 + 0.00305396
+[4500]	cv_agg's auc: 0.904265 + 0.00302552
+[4550]	cv_agg's auc: 0.904299 + 0.00304901
+[4600]	cv_agg's auc: 0.904339 + 0.00301895
+[4650]	cv_agg's auc: 0.904357 + 0.00299456
+[4700]	cv_agg's auc: 0.904386 + 0.00296115
+[4750]	cv_agg's auc: 0.904413 + 0.00297087
+[4800]	cv_agg's auc: 0.904445 + 0.00299092
+[4850]	cv_agg's auc: 0.90447 + 0.002983
+[4900]	cv_agg's auc: 0.904493 + 0.00297151
+[4950]	cv_agg's auc: 0.904516 + 0.00297247
+[5000]	cv_agg's auc: 0.904535 + 0.00296553
+[5050]	cv_agg's auc: 0.904564 + 0.002964
+[5100]	cv_agg's auc: 0.90457 + 0.00297682
+[5150]	cv_agg's auc: 0.904598 + 0.00297361
+[5200]	cv_agg's auc: 0.904623 + 0.00296233
+[5250]	cv_agg's auc: 0.904652 + 0.00298616
+[5300]	cv_agg's auc: 0.904669 + 0.00298412
+[5350]	cv_agg's auc: 0.904699 + 0.00297989
+[5400]	cv_agg's auc: 0.904711 + 0.00298082
+[5450]	cv_agg's auc: 0.904744 + 0.00299954
+[5500]	cv_agg's auc: 0.90477 + 0.00299234
+[5550]	cv_agg's auc: 0.90481 + 0.00297993
+[5600]	cv_agg's auc: 0.904832 + 0.00296405
+[5650]	cv_agg's auc: 0.90483 + 0.00298163
+[5700]	cv_agg's auc: 0.904861 + 0.0029765
+[5750]	cv_agg's auc: 0.904873 + 0.00298551
+[5800]	cv_agg's auc: 0.904896 + 0.00298189
+[5850]	cv_agg's auc: 0.904914 + 0.00297952
+[5900]	cv_agg's auc: 0.904933 + 0.00296569
+[5950]	cv_agg's auc: 0.904954 + 0.00295834
+[6000]	cv_agg's auc: 0.904975 + 0.00294119
+[6050]	cv_agg's auc: 0.904978 + 0.00295943
+[6100]	cv_agg's auc: 0.905006 + 0.00295419
+[6150]	cv_agg's auc: 0.905029 + 0.00294679
+[6200]	cv_agg's auc: 0.905035 + 0.00293833
+[6250]	cv_agg's auc: 0.905077 + 0.00292596
+[6300]	cv_agg's auc: 0.905074 + 0.0029183
+[6350]	cv_agg's auc: 0.905108 + 0.00291789
+[6400]	cv_agg's auc: 0.905139 + 0.00291609
+[6450]	cv_agg's auc: 0.905186 + 0.00290236
+[6500]	cv_agg's auc: 0.905195 + 0.00289004
+[6550]	cv_agg's auc: 0.905189 + 0.00289214
+[6600]	cv_agg's auc: 0.905198 + 0.00290149
+[6650]	cv_agg's auc: 0.905202 + 0.00289564
+[6700]	cv_agg's auc: 0.905227 + 0.00289694
+[6750]	cv_agg's auc: 0.905258 + 0.00288619
+[6800]	cv_agg's auc: 0.905291 + 0.00287808
+[6850]	cv_agg's auc: 0.905329 + 0.00286974
+[6900]	cv_agg's auc: 0.905344 + 0.00286905
+[6950]	cv_agg's auc: 0.905361 + 0.00284834
+[7000]	cv_agg's auc: 0.905366 + 0.00284564
+[7050]	cv_agg's auc: 0.905379 + 0.00285247
+[7100]	cv_agg's auc: 0.90538 + 0.00286649
+[7150]	cv_agg's auc: 0.905403 + 0.0028708
+[7200]	cv_agg's auc: 0.905419 + 0.0028503
+[7250]	cv_agg's auc: 0.905428 + 0.00285348
+[7300]	cv_agg's auc: 0.905433 + 0.00285207
+[7350]	cv_agg's auc: 0.905448 + 0.00283705
+[7400]	cv_agg's auc: 0.905468 + 0.00284714
+[7450]	cv_agg's auc: 0.905475 + 0.00284968
+[7500]	cv_agg's auc: 0.905493 + 0.00284759
+[7550]	cv_agg's auc: 0.905528 + 0.00284323
+[7600]	cv_agg's auc: 0.905551 + 0.00285299
+[7650]	cv_agg's auc: 0.905561 + 0.00285024
+[7700]	cv_agg's auc: 0.90557 + 0.00285164
+[7750]	cv_agg's auc: 0.905577 + 0.00284723
+[7800]	cv_agg's auc: 0.905583 + 0.00284094
+[7850]	cv_agg's auc: 0.905587 + 0.00283952
+[7900]	cv_agg's auc: 0.905598 + 0.002845
+[7950]	cv_agg's auc: 0.905622 + 0.0028512
+[8000]	cv_agg's auc: 0.905636 + 0.0028567
+[8050]	cv_agg's auc: 0.905647 + 0.00287594
+[8100]	cv_agg's auc: 0.90563 + 0.00286349
+[50]	cv_agg's auc: 0.788217 + 0.00459783
+[100]	cv_agg's auc: 0.809373 + 0.00353149
+[150]	cv_agg's auc: 0.824598 + 0.0036343
+[200]	cv_agg's auc: 0.835737 + 0.00328773
+[250]	cv_agg's auc: 0.844614 + 0.00306499
+[300]	cv_agg's auc: 0.851728 + 0.0028899
+[350]	cv_agg's auc: 0.857852 + 0.00268848
+[400]	cv_agg's auc: 0.86278 + 0.0027741
+[450]	cv_agg's auc: 0.866947 + 0.0027252
+[500]	cv_agg's auc: 0.870578 + 0.00257145
+[550]	cv_agg's auc: 0.873667 + 0.00260607
+[600]	cv_agg's auc: 0.876336 + 0.00250783
+[650]	cv_agg's auc: 0.878484 + 0.00247941
+[700]	cv_agg's auc: 0.880525 + 0.0023718
+[750]	cv_agg's auc: 0.882236 + 0.00232753
+[800]	cv_agg's auc: 0.883884 + 0.00226534
+[850]	cv_agg's auc: 0.885231 + 0.00237035
+[900]	cv_agg's auc: 0.886657 + 0.00234257
+[950]	cv_agg's auc: 0.887788 + 0.00232692
+[1000]	cv_agg's auc: 0.888854 + 0.00237764
+[1050]	cv_agg's auc: 0.889872 + 0.00238648
+[1100]	cv_agg's auc: 0.890808 + 0.00233635
+[1150]	cv_agg's auc: 0.891607 + 0.00229422
+[1200]	cv_agg's auc: 0.89246 + 0.00232085
+[1250]	cv_agg's auc: 0.893156 + 0.0023298
+[1300]	cv_agg's auc: 0.893845 + 0.00236167
+[1350]	cv_agg's auc: 0.894491 + 0.00234951
+[1400]	cv_agg's auc: 0.895077 + 0.0023607
+[1450]	cv_agg's auc: 0.895609 + 0.00236673
+[1500]	cv_agg's auc: 0.89611 + 0.00235023
+[1550]	cv_agg's auc: 0.896588 + 0.00233175
+[1600]	cv_agg's auc: 0.897011 + 0.00235359
+[1650]	cv_agg's auc: 0.897396 + 0.00233999
+[1700]	cv_agg's auc: 0.897763 + 0.00230886
+[1750]	cv_agg's auc: 0.898128 + 0.002239
+[1800]	cv_agg's auc: 0.898477 + 0.00222211
+[1850]	cv_agg's auc: 0.898793 + 0.00219101
+[1900]	cv_agg's auc: 0.899063 + 0.0021657
+[1950]	cv_agg's auc: 0.899326 + 0.00214081
+[2000]	cv_agg's auc: 0.899617 + 0.00213346
+[2050]	cv_agg's auc: 0.899845 + 0.00214238
+[2100]	cv_agg's auc: 0.900102 + 0.00219738
+[2150]	cv_agg's auc: 0.900361 + 0.0021536
+[2200]	cv_agg's auc: 0.900578 + 0.002152
+[2250]	cv_agg's auc: 0.900793 + 0.00210671
+[2300]	cv_agg's auc: 0.900975 + 0.00211042
+[2350]	cv_agg's auc: 0.901146 + 0.00212206
+[2400]	cv_agg's auc: 0.901316 + 0.00212941
+[2450]	cv_agg's auc: 0.90149 + 0.00214549
+[2500]	cv_agg's auc: 0.901624 + 0.00212561
+[2550]	cv_agg's auc: 0.901763 + 0.00212957
+[2600]	cv_agg's auc: 0.90191 + 0.00215538
+[2650]	cv_agg's auc: 0.902083 + 0.00214579
+[2700]	cv_agg's auc: 0.902202 + 0.00213019
+[2750]	cv_agg's auc: 0.902326 + 0.00210997
+[2800]	cv_agg's auc: 0.902454 + 0.00210571
+[2850]	cv_agg's auc: 0.902577 + 0.00212883
+[2900]	cv_agg's auc: 0.902709 + 0.00212269
+[2950]	cv_agg's auc: 0.902785 + 0.00210649
+[3000]	cv_agg's auc: 0.902869 + 0.00211412
+[3050]	cv_agg's auc: 0.902975 + 0.00211231
+[3100]	cv_agg's auc: 0.903061 + 0.00211452
+[3150]	cv_agg's auc: 0.903121 + 0.00211147
+[3200]	cv_agg's auc: 0.903208 + 0.00210531
+[3250]	cv_agg's auc: 0.903279 + 0.00209401
+[3300]	cv_agg's auc: 0.903313 + 0.00211009
+[3350]	cv_agg's auc: 0.903397 + 0.00208168
+[3400]	cv_agg's auc: 0.90347 + 0.00207556
+[3450]	cv_agg's auc: 0.90356 + 0.00210215
+[3500]	cv_agg's auc: 0.903614 + 0.00208801
+[3550]	cv_agg's auc: 0.903652 + 0.0020752
+[3600]	cv_agg's auc: 0.903728 + 0.00208522
+[3650]	cv_agg's auc: 0.903786 + 0.00208429
+[3700]	cv_agg's auc: 0.903868 + 0.00209928
+[3750]	cv_agg's auc: 0.903902 + 0.00208481
+[3800]	cv_agg's auc: 0.903962 + 0.00207789
+[3850]	cv_agg's auc: 0.904006 + 0.00209149
+[3900]	cv_agg's auc: 0.904045 + 0.00210882
+[3950]	cv_agg's auc: 0.904117 + 0.00211307
+[4000]	cv_agg's auc: 0.904157 + 0.00210845
+[4050]	cv_agg's auc: 0.904211 + 0.00208827
+[4100]	cv_agg's auc: 0.904274 + 0.00210308
+[4150]	cv_agg's auc: 0.904331 + 0.00208645
+[4200]	cv_agg's auc: 0.904353 + 0.00207269
+[4250]	cv_agg's auc: 0.904389 + 0.00208489
+[4300]	cv_agg's auc: 0.904409 + 0.00208851
+[4350]	cv_agg's auc: 0.904441 + 0.0021096
+[4400]	cv_agg's auc: 0.904466 + 0.00210601
+[4450]	cv_agg's auc: 0.904496 + 0.00211825
+[4500]	cv_agg's auc: 0.904519 + 0.00211337
+[4550]	cv_agg's auc: 0.90455 + 0.00211965
+[4600]	cv_agg's auc: 0.904571 + 0.00210821
+[4650]	cv_agg's auc: 0.904599 + 0.00210267
+[4700]	cv_agg's auc: 0.904627 + 0.00208498
+[4750]	cv_agg's auc: 0.904645 + 0.00209469
+[4800]	cv_agg's auc: 0.904675 + 0.00209862
+[4850]	cv_agg's auc: 0.90468 + 0.00210041
+[4900]	cv_agg's auc: 0.90472 + 0.00210071
+[4950]	cv_agg's auc: 0.904745 + 0.00209744
+[5000]	cv_agg's auc: 0.904775 + 0.00212318
+[5050]	cv_agg's auc: 0.904799 + 0.00211367
+[5100]	cv_agg's auc: 0.904834 + 0.00211146
+[5150]	cv_agg's auc: 0.904873 + 0.00211661
+[5200]	cv_agg's auc: 0.904895 + 0.00211563
+[5250]	cv_agg's auc: 0.904895 + 0.00210649
+[5300]	cv_agg's auc: 0.904886 + 0.00210078
+[5350]	cv_agg's auc: 0.904919 + 0.00211529
+[5400]	cv_agg's auc: 0.90494 + 0.00213672
+[5450]	cv_agg's auc: 0.904962 + 0.00211367
+[5500]	cv_agg's auc: 0.904995 + 0.00209117
+[5550]	cv_agg's auc: 0.905002 + 0.00210667
+[5600]	cv_agg's auc: 0.905024 + 0.00211183
+[5650]	cv_agg's auc: 0.905021 + 0.00214065
+[5700]	cv_agg's auc: 0.905032 + 0.00216399
+[5750]	cv_agg's auc: 0.905056 + 0.00216657
+[5800]	cv_agg's auc: 0.905074 + 0.00216954
+[5850]	cv_agg's auc: 0.905106 + 0.00216559
+[5900]	cv_agg's auc: 0.905148 + 0.00216483
+[5950]	cv_agg's auc: 0.905173 + 0.00216558
+[6000]	cv_agg's auc: 0.905196 + 0.00217552
+[6050]	cv_agg's auc: 0.905205 + 0.00217236
+[6100]	cv_agg's auc: 0.905223 + 0.00218147
+[6150]	cv_agg's auc: 0.905236 + 0.00219801
+[6200]	cv_agg's auc: 0.905245 + 0.00220257
+[6250]	cv_agg's auc: 0.905255 + 0.00219654
+[6300]	cv_agg's auc: 0.905288 + 0.00220221
+[6350]	cv_agg's auc: 0.90528 + 0.00218532
+[6400]	cv_agg's auc: 0.905312 + 0.00218743
+[6450]	cv_agg's auc: 0.905349 + 0.00216879
+[6500]	cv_agg's auc: 0.905361 + 0.00215727
+[6550]	cv_agg's auc: 0.905382 + 0.00215574
+[6600]	cv_agg's auc: 0.905391 + 0.0021708
+[6650]	cv_agg's auc: 0.905399 + 0.00217254
+[6700]	cv_agg's auc: 0.905405 + 0.00217632
+[6750]	cv_agg's auc: 0.905412 + 0.0021948
+[6800]	cv_agg's auc: 0.905429 + 0.00219313
+[6850]	cv_agg's auc: 0.905443 + 0.00220283
+[6900]	cv_agg's auc: 0.905453 + 0.00219796
+[6950]	cv_agg's auc: 0.905469 + 0.00218851
+[7000]	cv_agg's auc: 0.905492 + 0.00218822
+[7050]	cv_agg's auc: 0.905517 + 0.00218995
+[7100]	cv_agg's auc: 0.905516 + 0.00219912
+[7150]	cv_agg's auc: 0.905511 + 0.00220793
+oof AUC: 0.90678
 
 #==============================================================================
 # SUCCESS !!! 801_cv.py
 #==============================================================================
 
-time: 19.25min
-instance-1  FINISH 801_cv.py  time: 19.25min
+time: 155.88min
+instance-1  FINISH 801_cv.py  time: 155.88min
