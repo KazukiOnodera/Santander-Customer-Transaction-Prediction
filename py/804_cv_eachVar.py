@@ -136,7 +136,7 @@ def load(var):
 # =============================================================================
 
 for var in var_names:
-    X_train = load(var).filter(regex=f'^(?=.*{v}).*$')
+    X_train = load(var).filter(regex=f'^(?=.*{var}).*$')
     dtrain = lgb.Dataset(X_train, y_train.values, 
                          free_raw_data=False)
     gc.collect()
@@ -192,7 +192,7 @@ for var in var_names:
     utils.savefig_imp(imp, f'LOG/imp_{__file__}.png', x='total')
     
     
-    utils.send_line(f'oof AUC({v}): {round(roc_auc_score(y_train, oof), 5)}')
+    utils.send_line(f'oof AUC({var}): {round(roc_auc_score(y_train, oof), 5)}')
 
 #==============================================================================
 utils.end(__file__)
