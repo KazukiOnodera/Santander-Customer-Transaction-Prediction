@@ -15,7 +15,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 sc = MinMaxScaler()
 
-result_all = pd.read_csv('/Users/Kazuki/Downloads/auc_806_cv_opt_round.py.csv')
+result_all = pd.read_csv('LOG/auc_806_cv_opt_round.py.csv')
 
 
 var_names = [f'var_{i:03}' for i in range(200)]
