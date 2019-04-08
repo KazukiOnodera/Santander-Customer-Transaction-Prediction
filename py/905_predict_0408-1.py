@@ -51,7 +51,7 @@ params = {
 
 NFOLD = 5
 
-NROUND = 150
+NROUND = 1500
 
 
 SEED = 4081
@@ -264,6 +264,11 @@ sub_df_ = pd.merge(samp[["ID_code"]], test_df_samp, how="left").fillna(0)
 sub_df_.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
 
 print(sub_df_.target.describe())
+
+
+#==============================================================================
+utils.end(__file__)
+#utils.stop_instance()
 
 
 
