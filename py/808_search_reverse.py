@@ -50,7 +50,7 @@ NROUND = 150
 SEED = 1
 np.random.seed(SEED)
 
-search_range = (80, 100)
+search_range = (100, 120)
 
 AUC_bench1 = 0.9260676268235818
 AUC_bench2 = 0.9261687712753559
