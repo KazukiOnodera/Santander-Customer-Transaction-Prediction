@@ -19,7 +19,7 @@ from multiprocessing import cpu_count
 from tqdm import tqdm
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
 
 # parameters
@@ -50,7 +50,7 @@ NROUND = 150
 SEED = 1
 np.random.seed(SEED)
 
-search_range = (40, 60)
+search_range = (60, 80)
 
 AUC_bench1 = 0.9260676268235818
 AUC_bench2 = 0.9261687712753559
@@ -204,3 +204,8 @@ for ayasii in range(search_range[0], search_range[1]):
     
     auc = roc_auc_score(y_train, oof_odds)
     utils.send_line(f'{ayasii} AUC(th0.5): {auc}, {AUC_bench2 - auc}')
+
+#==============================================================================
+utils.end(__file__)
+utils.stop_instance()
+
