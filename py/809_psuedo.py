@@ -19,7 +19,7 @@ from multiprocessing import cpu_count
 from tqdm import tqdm
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
 
 # parameters
@@ -273,4 +273,4 @@ sub = pd.merge(sub1[["ID_code"]], sub2, how="left").fillna(0)
 
 #==============================================================================
 utils.end(__file__)
-
+utils.stop_instance()
