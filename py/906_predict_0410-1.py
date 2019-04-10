@@ -19,7 +19,7 @@ from multiprocessing import cpu_count
 from tqdm import tqdm
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
 
 # parameters
@@ -305,7 +305,7 @@ gsutil cp gs://malware_onodera/*.txt LOG/
 
 #==============================================================================
 utils.end(__file__)
-#utils.stop_instance()
+utils.stop_instance()
 
 
 
