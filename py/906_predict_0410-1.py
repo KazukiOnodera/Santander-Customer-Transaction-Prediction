@@ -255,7 +255,8 @@ for i in range(NFOLD):
 id_y['pred'] = oof
 oof = pd.pivot_table(id_y, index='id', columns='var', values='pred').values
 
-utils.send_line(f'seed{SEED} AUC(all var):', roc_auc_score(y_train, (9 * oof / (1 - oof)).prod(axis=1)))
+auc = f'seed{SEED} AUC(all var):', roc_auc_score(y_train, (9 * oof / (1 - oof)).prod(axis=1))
+utils.send_line(auc)
 
 l = y_train.shape[0]
 oof_odds = np.ones(l) * 1 / 9
@@ -263,7 +264,8 @@ for j in range(var_len):
     if roc_auc_score(y_train, oof[:, j]) >= 0.500:
         oof_odds *= (9 * oof[:, j] / (1 - oof[:, j]))
 
-utils.send_line(f'seed{SEED} AUC(th0.5):', roc_auc_score(y_train, oof_odds))
+auc = f'seed{SEED} AUC(th0.5):', roc_auc_score(y_train, oof_odds)
+utils.send_line(auc)
 
 # save raw pred
 np.save('../data/{__file__}_oof', oof)
