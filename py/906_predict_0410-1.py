@@ -42,7 +42,7 @@ params = {
     'verbosity': -1
     }
 
-NFOLD = 5
+NFOLD = 10
 
 NROUND = 1600
 
