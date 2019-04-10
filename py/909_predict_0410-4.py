@@ -18,7 +18,7 @@ from multiprocessing import cpu_count
 from tqdm import tqdm
 
 import utils
-#utils.start(__file__)
+utils.start(__file__)
 #==============================================================================
 
 # parameters
