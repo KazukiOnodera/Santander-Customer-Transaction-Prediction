@@ -19,7 +19,7 @@ from multiprocessing import cpu_count
 from tqdm import tqdm
 
 import utils
-utils.start(__file__)
+#utils.start(__file__)
 #==============================================================================
 
 # parameters
@@ -62,7 +62,7 @@ reverse_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 15, 16, 18, 19, 22, 24, 25, 26,
                 180, 181, 184, 185, 187, 189, 190, 191, 195, 196, 199,
                 ]
 
-pseudo_threshold = 300
+pseudo_threshold = 1500
 best_sub_path = '../output/0408-1.csv.gz'
 
 # =============================================================================
@@ -146,6 +146,8 @@ id_y = pd.DataFrame(zip(np.r_[train_group, test_group], y_train_concat),
 
 id_y_uq = id_y.drop_duplicates('id').reset_index(drop=True)
 
+y_train_pseudo = np.r_[y_train, np.ones(len(pseudo_index))]
+
 # =============================================================================
 # train
 # =============================================================================
@@ -179,7 +181,7 @@ models = []
 oof = np.zeros(len(id_y))
 p_test_all = np.zeros((100000, var_len, NFOLD))
 id_y['var'] = np.r_[np.concatenate([np.ones(200000)*i for i in range(var_len)]), 
-                    np.concatenate([np.ones(len(pseudo_index))*i for cnum in range(var_len)])]
+                    np.concatenate([np.ones(len(pseudo_index))*i for i in range(var_len)])]
 #id_y['pred'] = 0
 
 for i in range(NFOLD):
@@ -224,7 +226,7 @@ for i in range(NFOLD):
     models.append(model)
 
 id_y['pred'] = oof
-oof = pd.pivot_table(id_y, index='id', columns='var', values='pred').values
+oof = pd.pivot_table(id_y, index='id', columns='var', values='pred').head(200000).values
 
 auc = roc_auc_score(y_train, (9 * oof / (1 - oof)).prod(axis=1))
 utils.send_line(f'AUC(all var): {auc}')

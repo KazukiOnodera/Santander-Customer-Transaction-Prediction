@@ -8,7 +8,7 @@ Created on Tue Apr  9 11:37:01 2019
 
 import numpy as np
 import pandas as pd
-import gc
+import gc, os
 
 import lightgbm as lgb
 from sklearn.metrics import roc_auc_score
@@ -23,7 +23,6 @@ import utils
 #==============================================================================
 
 # parameters
-SUBMIT_FILE_PATH = '../output/xxxx-x.csv.gz'
 
 params = {
     'bagging_freq': 5,
@@ -31,7 +30,7 @@ params = {
     'boost_from_average':'false',
     'boost': 'gbdt',
     'feature_fraction': 1.0,
-    'learning_rate': 0.05,
+    'learning_rate': 0.005,
     'max_depth': -1,
     'metric':'binary_logloss',
     'min_data_in_leaf': 30,
@@ -45,12 +44,13 @@ params = {
 
 NFOLD = 5
 
-NROUND = 150
+NROUND = 1600
 
 
-SEED = 4091
+SEED = np.random.randint(99999)
 np.random.seed(SEED)
 
+SUBMIT_FILE_PATH = f'../output/0410-1_seed{SEED}.csv.gz'
 
 # =============================================================================
 # drop vars
@@ -102,16 +102,6 @@ for j in reverse_list:
     X[:, j] *= -1
 
 
-#ayasii_list = [
-##            38, 
-##            41, 
-##            46,
-#            138
-#            ]
-#
-#for j in ayasii_list:
-#    X[:, j] *= -1
-
 # drop
 X = np.delete(X, drop_vars, 1)
 
@@ -150,6 +140,39 @@ X_train_concat = np.concatenate([
 y_train_concat = np.concatenate([y_train for cnum in range(var_len)], axis=0)
 
 # =============================================================================
+# stratified
+# =============================================================================
+train_group = np.arange(len(X_train_concat))%200000
+
+id_y = pd.DataFrame(zip(train_group, y_train_concat), 
+                    columns=['id', 'y'])
+
+id_y_uq = id_y.drop_duplicates('id').reset_index(drop=True)
+
+def stratified(nfold=5):
+    
+    id_y_uq0 = id_y_uq[id_y_uq.y==0].sample(frac=1)
+    id_y_uq1 = id_y_uq[id_y_uq.y==1].sample(frac=1)
+    
+    id_y_uq0['g'] = [i%nfold for i in range(len(id_y_uq0))]
+    id_y_uq1['g'] = [i%nfold for i in range(len(id_y_uq1))]
+    id_y_uq_ = pd.concat([id_y_uq0, id_y_uq1])
+    
+    id_y_ = pd.merge(id_y[['id']], id_y_uq_, how='left', on='id')
+    
+    train_idx_list = []
+    valid_idx_list = []
+    for i in range(nfold):
+        train_idx = id_y_[id_y_.g!=i].index
+        train_idx_list.append(train_idx)
+        valid_idx = id_y_[id_y_.g==i].index
+        valid_idx_list.append(valid_idx)
+    
+    return train_idx_list, valid_idx_list
+
+train_idx_list, valid_idx_list = stratified(NFOLD)
+
+# =============================================================================
 # cv
 # =============================================================================
 
@@ -186,18 +209,10 @@ y_train_concat = np.concatenate([y_train for cnum in range(var_len)], axis=0)
 # train
 # =============================================================================
 
-skf = StratifiedKFold(n_splits=NFOLD)
-skf.get_n_splits(X[:200000, :], y_train)
-
-train_idx_list = []
-valid_idx_list = []
-for train_index, test_index in skf.split(X[:200000, :], y_train):
-    train_idx_list.append(train_index)
-    valid_idx_list.append(test_index)
-
 models = []
-oof = np.zeros((200000, var_len))
+oof = np.zeros(len(id_y))
 p_test_all = np.zeros((100000, var_len, NFOLD))
+id_y['var'] = np.concatenate([np.ones(200000)*i for i in range(var_len)])
 
 for i in range(NFOLD):
     
@@ -207,21 +222,11 @@ for i in range(NFOLD):
     valid_idx = valid_idx_list[i]
     
     # train
-    X_train_cv = np.concatenate([
-        np.concatenate([
-            X[train_idx, 5*cnum:5*cnum+5], 
-            np.ones((train_idx.shape[0], 1)).astype("int")*cnum
-        ], axis=1) for cnum in range(var_len)], axis=0
-    )
-    y_train_cv = np.concatenate([y_train[train_idx] for cnum in range(var_len)], axis=0)
+    X_train_cv = X_train_concat[train_idx]
+    y_train_cv = y_train_concat[train_idx]
     
     # valid
-    X_valid = np.concatenate([
-        np.concatenate([
-            X[valid_idx, 5*cnum:5*cnum+5], 
-            np.ones((valid_idx.shape[0], 1)).astype("int")*cnum
-        ], axis=1) for cnum in range(var_len)], axis=0
-    )
+    X_valid = X_train_concat[valid_idx]
     
     # test
     X_test = np.concatenate([
@@ -242,12 +247,15 @@ for i in range(NFOLD):
     p_valid = model.predict(X_valid)
     p_test  = model.predict(X_test)
     for j in range(var_len):
-        oof[valid_idx, j]     = p_valid[j*l:(j+1)*l]
+        oof[valid_idx] = p_valid
         p_test_all[:, j, i] = p_test[j*100000:(j+1)*100000]
     
     models.append(model)
 
-print('AUC(all var):', roc_auc_score(y_train, (9 * oof / (1 - oof)).prod(axis=1)))
+id_y['pred'] = oof
+oof = pd.pivot_table(id_y, index='id', columns='var', values='pred').values
+
+utils.send_line(f'seed{SEED} AUC(all var):', roc_auc_score(y_train, (9 * oof / (1 - oof)).prod(axis=1)))
 
 l = y_train.shape[0]
 oof_odds = np.ones(l) * 1 / 9
@@ -255,7 +263,7 @@ for j in range(var_len):
     if roc_auc_score(y_train, oof[:, j]) >= 0.500:
         oof_odds *= (9 * oof[:, j] / (1 - oof[:, j]))
 
-print('AUC(th0.5):', roc_auc_score(y_train, oof_odds))
+utils.send_line(f'seed{SEED} AUC(th0.5):', roc_auc_score(y_train, oof_odds))
 
 # save raw pred
 np.save('../data/{__file__}_oof', oof)
@@ -283,6 +291,16 @@ sub = pd.merge(sub1[["ID_code"]], sub2, how="left").fillna(0)
 sub.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
 
 print(sub.target.describe())
+
+os.system(f'gsutil cp {SUBMIT_FILE_PATH} gs://malware_onodera/')
+os.system(f'cp LOG/log_{__file__}.txt LOG/log_{__file__}_{SEED}.txt')
+os.system(f'gsutil cp LOG/log_{__file__}_{SEED}.txt gs://malware_onodera/')
+
+
+"""
+gsutil cp gs://malware_onodera/*.gz ../output/
+gsutil cp gs://malware_onodera/*.txt LOG/
+"""
 
 
 #==============================================================================
