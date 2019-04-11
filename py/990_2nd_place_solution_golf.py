@@ -4,6 +4,15 @@
 Created on Thu Apr 11 13:36:18 2019
 
 @author: kazuki.onodera
+
+
+└── input
+    ├── sample_submission.csv.zip
+    ├── test.csv.zip
+    └── train.csv.zip
+
+
+
 """
 
 import numpy as np
