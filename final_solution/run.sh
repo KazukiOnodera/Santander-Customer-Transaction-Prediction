@@ -15,9 +15,9 @@ ln __RAWDATA__/* akiyama/input/
 cd onodera/py
 mkdir ../data
 mkdir ../output
-mkdir ../LOG
+mkdir LOG
 
-python -u 000_init.py  > LOG/log_000_init.py.txt
+python -u 000_init.py > LOG/log_000_init.py.txt
 
 python -u 906_predict_0410-1.py 7441  > LOG/log_906_predict_0410-1_7441.py.txt
 python -u 906_predict_0410-1.py 11834 > LOG/log_906_predict_0410-1_11834.py.txt

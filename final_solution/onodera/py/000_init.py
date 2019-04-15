@@ -14,7 +14,7 @@ from tqdm import tqdm
 # main
 # =============================================================================
 if __name__ == "__main__":
-    
+    print('start')
     # ===== fake samples =====
     te_ = pd.read_csv('../input/test.csv.zip').drop(['ID_code'], axis=1).values
     
@@ -30,5 +30,6 @@ if __name__ == "__main__":
     
     np.save('../data/fake_index', synthetic_samples_indexes)
     
+    print('end')
 
 
