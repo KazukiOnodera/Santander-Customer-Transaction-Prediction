@@ -19,6 +19,9 @@ from multiprocessing import cpu_count
 from tqdm import tqdm
 
 import sys
+
+import utils
+utils.start(__file__)
 #==============================================================================
 
 # parameters
@@ -288,5 +291,6 @@ sub.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
 
 
 #==============================================================================
+utils.end(__file__)
 
 
