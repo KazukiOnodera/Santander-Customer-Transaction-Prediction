@@ -10,11 +10,13 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
+import utils
+utils.start(__file__)
 # =============================================================================
 # main
 # =============================================================================
 if __name__ == "__main__":
-    print('start')
+    
     # ===== fake samples =====
     te_ = pd.read_csv('../input/test.csv.zip').drop(['ID_code'], axis=1).values
     
@@ -32,4 +34,4 @@ if __name__ == "__main__":
     
     print('end')
 
-
+utils.end(__file__)
