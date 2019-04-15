@@ -3,8 +3,8 @@
 # =============================================================================
 # link from rawdata(includes .zip and .csv)
 # =============================================================================
-mkdir ../onodera/input
-mkdir ../akiyama/input
+mkdir onodera/input
+mkdir akiyama/input
 
 ln __RAWDATA__/* onodera/input/
 ln __RAWDATA__/* akiyama/input/
