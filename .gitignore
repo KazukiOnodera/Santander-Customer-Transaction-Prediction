@@ -10,3 +10,8 @@ py/*.model
 py/*.p
 py/__pycache__/*
 py/~.xls*
+final_solution/__RAWDATA__/*.zip
+final_solution/*/input
+final_solution/*/data
+final_solution/*/output
+
