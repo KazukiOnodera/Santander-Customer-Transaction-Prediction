@@ -8,11 +8,10 @@ Created on Tue Apr  9 11:37:01 2019
 
 import numpy as np
 import pandas as pd
-import gc, os
+import gc
 
 import lightgbm as lgb
 from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler
 
 from multiprocessing import cpu_count
@@ -173,39 +172,6 @@ def stratified(nfold=5):
     return train_idx_list, valid_idx_list
 
 train_idx_list, valid_idx_list = stratified(NFOLD)
-
-# =============================================================================
-# cv
-# =============================================================================
-
-#dtrain = lgb.Dataset(X_train_concat, y_train_concat, 
-#    feature_name=['value', 'count_org', 'count_2', 'count_3', 'count_4', 'varnum'], 
-#    categorical_feature=['varnum'], free_raw_data=False)
-#
-#del X_train_concat; gc.collect()
-
-# cv
-#ret, models, = lgb.cv(params, tratest_dset, early_stopping_rounds=200, nfold=NFOLD, 
-#                      num_boost_round=10000, verbose_eval=100)
-"""
-[100]	cv_agg's binary_logloss: 0.484652 + 2.26578e-06
-[200]	cv_agg's binary_logloss: 0.395391 + 8.73085e-06
-[300]	cv_agg's binary_logloss: 0.355365 + 6.98843e-06
-[400]	cv_agg's binary_logloss: 0.33769 + 8.28864e-06
-[500]	cv_agg's binary_logloss: 0.33015 + 1.02757e-05
-[600]	cv_agg's binary_logloss: 0.327054 + 1.20748e-05
-[700]	cv_agg's binary_logloss: 0.325823 + 1.33061e-05
-[800]	cv_agg's binary_logloss: 0.325346 + 1.3853e-05
-[900]	cv_agg's binary_logloss: 0.325164 + 1.41864e-05
-[1000]	cv_agg's binary_logloss: 0.325096 + 1.40618e-05
-[1100]	cv_agg's binary_logloss: 0.32507 + 1.43292e-05
-[1200]	cv_agg's binary_logloss: 0.325061 + 1.4517e-05
-[1300]	cv_agg's binary_logloss: 0.325058 + 1.46426e-05
-[1400]	cv_agg's binary_logloss: 0.325057 + 1.47049e-05
-[1500]	cv_agg's binary_logloss: 0.325057 + 1.47674e-05
-[1600]	cv_agg's binary_logloss: 0.325057 + 1.48108e-05
-"""
-
 
 # =============================================================================
 # train

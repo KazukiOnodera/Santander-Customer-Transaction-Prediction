@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-import gc
 import os
-import sys
 
 import pandas as pd
 import numpy as np
@@ -16,7 +14,6 @@ def find_real_id(test):
     '''
     test_array = test.drop(['ID_code'], axis=1).values
 
-    unique_samples = []
     unique_count = np.zeros_like(test_array)
     for feature in tqdm(range(test_array.shape[1])):
         _, index_, count_ = np.unique(test_array[:, feature], return_counts=True, return_index=True)

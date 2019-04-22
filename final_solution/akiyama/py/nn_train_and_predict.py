@@ -1,22 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
-import gc
 import os
-import sys
 
 import pandas as pd
 import numpy as np
 
-from tqdm import tqdm
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 
-import keras
-import tensorflow as tf
-from keras.models import Sequential, Model
-from keras.layers import Dense,BatchNormalization,Dropout, Embedding, Flatten, RepeatVector, Multiply, Concatenate, Input
+from keras.models import Model
+from keras.layers import Dense, BatchNormalization,Dropout, Embedding, Flatten, Concatenate, Input
 from keras.layers.core import Lambda
-from keras.callbacks import ModelCheckpoint, EarlyStopping, LearningRateScheduler
 from keras import backend as K
 from keras import optimizers
 from keras.layers.advanced_activations import PReLU

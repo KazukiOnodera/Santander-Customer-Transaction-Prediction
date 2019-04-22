@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-import gc
+
 import os
-import sys
-
 import pandas as pd
-import numpy as np
-
-from tqdm import tqdm
 from sklearn.metrics import roc_auc_score
 
 def main():
