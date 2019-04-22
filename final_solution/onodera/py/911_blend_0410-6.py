@@ -16,10 +16,6 @@ import utils
 # =============================================================================
 SUBMIT_FILE_PATH = '../output/0410-6.csv.gz'
 
-COMMENT = 'lgb(onodera harada akiyama) + nn(akiyama) 1:3'
-
-EXE_SUBMIT = True
-
 
 fake_index = np.load('../data/fake_index.npy')
 
