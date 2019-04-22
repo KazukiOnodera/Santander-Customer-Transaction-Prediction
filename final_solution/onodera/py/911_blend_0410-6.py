@@ -57,18 +57,18 @@ sub_h = sub_h.target.rank(pct=1)
 # =============================================================================
 # akiyama(real)
 # =============================================================================
-sub_a_nn = pd.read_csv('../external/929_nn2.csv.gz').drop(fake_index).target
+sub_a_nn = pd.read_csv('../../akiyama/output/akiyama_nn.csv.gz').drop(fake_index).target
 sub_a_nn.name = 'akiyama_nn10ave'
 
-sub_a_lgb = pd.read_csv('../external/930_lgb2.csv.gz').drop(fake_index).target
+sub_a_lgb = pd.read_csv('../../akiyama/output/akiyama_lgb.csv.gz').drop(fake_index).target
 sub_a_lgb.name = 'akiyama_lgb10ave'
 
 
 # =============================================================================
 # akiyama(fake)
 # =============================================================================
-fake_nn  = pd.read_csv('../external/929_nn2.csv.gz').iloc[fake_index].target
-fake_lgb = pd.read_csv('../external/930_lgb2.csv.gz').iloc[fake_index].target
+fake_nn  = pd.read_csv('../../akiyama/output/akiyama_nn.csv.gz').iloc[fake_index].target
+fake_lgb = pd.read_csv('../../akiyama/output/akiyama_lgb.csv.gz').iloc[fake_index].target
 
 
 # =============================================================================
@@ -111,12 +111,6 @@ print('corr wo fake:', sub_best_real.target_x.rank().corr(sub_best_real.target_y
 # save
 sub.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
 
-# =============================================================================
-# submission
-# =============================================================================
-if EXE_SUBMIT:
-    print('submit')
-    utils.submit(SUBMIT_FILE_PATH, COMMENT)
 
 
 
