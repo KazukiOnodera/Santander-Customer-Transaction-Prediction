@@ -1,4 +1,4 @@
-# santander-customer-transaction-prediction
+# Santander-Customer-Transaction-Prediction
 
 LeaderBoard: https://www.kaggle.com/c/santander-customer-transaction-prediction/leaderboard
 
