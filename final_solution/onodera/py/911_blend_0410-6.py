@@ -90,19 +90,6 @@ sub = pd.merge(sample[['ID_code']], sub, on='ID_code', how='left')
 
 sub.target /= sub.target.max()
 
-# =============================================================================
-# corr with best
-# =============================================================================
-sub_best = pd.merge(sample[['ID_code']],
-                    pd.read_csv('../output/0410-3.csv.gz'),
-                    on='ID_code', how='left')
-
-sub_best = pd.merge(sub_best, sub, on='ID_code', how='left')
-
-sub_best_real = sub_best.drop(fake_index)
-print('corr wo fake:', sub_best_real.target_x.rank().corr(sub_best_real.target_y.rank()))
-
-
 # save
 sub.to_csv(SUBMIT_FILE_PATH, index=False, compression='gzip')
 
